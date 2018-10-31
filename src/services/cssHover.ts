@@ -6,7 +6,7 @@
 
 import * as nodes from '../parser/cssNodes';
 import * as languageFacts from './languageFacts';
-import { TextDocument, Range, Position, Hover, MarkedString } from 'vscode-languageserver-types';
+import { TextDocument, Range, Position, Hover, MarkedString, MarkupContent, MarkupKind } from 'vscode-languageserver-types';
 import { selectorToMarkedString, simpleSelectorToMarkedString } from './selectorPrinting';
 
 export class CSSHover {
@@ -48,6 +48,17 @@ export class CSSHover {
 					let browserLabel = languageFacts.getBrowserLabel(entry.browsers);
 					if (browserLabel) {
 						contents.push(MarkedString.fromPlainText(browserLabel));
+					}
+					if ((entry as any).data.mdn_url) {
+						const markupContent: MarkupContent = {
+							kind: MarkupKind.Markdown,
+							value: contents.map(c => c.toString()).join('\n') + `\n\n[MDN](${(entry as any).data.mdn_url})`
+						};
+						return {
+							contents: markupContent,
+							range: getRange(node)
+						};
+							// contents.push(MarkedString.fromPlainText(`MDN: ${(entry as any).data.mdn_url}`));
 					}
 					if (contents.length) {
 						return {

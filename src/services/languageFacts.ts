@@ -8,7 +8,7 @@ import * as nodes from '../parser/cssNodes';
 import * as browsers from '../data/browsers';
 
 import * as nls from 'vscode-nls';
-import { Color } from 'vscode-languageserver-types';
+import { Color, MarkupContent, MarkupKind } from 'vscode-languageserver-types';
 const localize = nls.loadMessageBundle();
 
 export let colors: { [name: string]: string } = {
@@ -579,7 +579,7 @@ export function getPageBoxDirectives(): string[] {
 	];
 }
 
-export function getEntryDescription(entry: { description: string; browsers: Browsers, data?: any }): string | null {
+export function getEntryDescription(entry: any): MarkupContent | null {
 	if (!entry.description || entry.description === '') {
 		return null;
 	}
@@ -599,7 +599,16 @@ export function getEntryDescription(entry: { description: string; browsers: Brow
 	if (entry.data && entry.data.syntax) {
 		desc += `\n\nSyntax: ${entry.data.syntax}`;
 	}
-	return desc;
+
+	const resultMarkup = {
+		kind: MarkupKind.Markdown,
+		value: [
+			desc,
+			'  ',
+			`[MDN](${entry.mdn_url})`
+		].join('\n')
+	};
+	return resultMarkup;
 }
 
 export function expandEntryStatus(status: string): EntryStatus {

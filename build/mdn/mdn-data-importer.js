@@ -76,13 +76,15 @@ function addMDNProperties(vscProperties) {
 function extractMDNProperties(mdnEntry) {
   if (mdnEntry.status === 'standard') {
     return {
-      syntax: mdnEntry.syntax
+      syntax: mdnEntry.syntax,
+      mdn_url: mdnEntry.mdn_url
     }
   }
 
   return {
     status: abbreviateStatus(mdnEntry.status),
-    syntax: mdnEntry.syntax
+    syntax: mdnEntry.syntax,
+    mdn_url: mdnEntry.mdn_url
   }
 }
 

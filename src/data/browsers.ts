@@ -498,6 +498,7 @@ export const data : any = {
 			{
 				name: ":focus-visible",
 				desc: "The :focus-visible pseudo-class applies while an element matches the :focus pseudo-class and the UA determines via heuristics that the focus should be made evident on the element.",
+				"status": "e",
 				browsers: "C67"
 			},
 			{
@@ -505,11 +506,6 @@ export const data : any = {
 				desc: "The :focus-within pseudo-class applies to any element for which the :focus pseudo class applies as well as to an element whose descendant in the flat tree (including non-element nodes, such as text nodes) matches the conditions for matching :focus.",
 				"status": "e",
 				browsers: "FF52,S10.1,C60,O47"
-			},
-			{
-				name: ":has",
-				desc: ":The :has() CSS pseudo-class represents an element if any of the selectors passed as parameters (relative to the :scope of the given element), match at least one element.",
-				"status": "e"
 			},
 			{
 				name: ":placeholder-shown",
@@ -891,7 +887,8 @@ export const data : any = {
 						desc: "Lines stretch to take up the remaining space."
 					}
 				],
-				"syntax": "normal | <baseline-position> | <content-distribution> | <overflow-position>? <content-position>"
+				"syntax": "normal | <baseline-position> | <content-distribution> | <overflow-position>? <content-position>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/align-content"
 			},
 			{
 				name: "align-items",
@@ -920,7 +917,8 @@ export const data : any = {
 						desc: "If the cross size property of the flex item computes to auto, and neither of the cross-axis margins are auto, the flex item is stretched."
 					}
 				],
-				"syntax": "normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]"
+				"syntax": "normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/align-items"
 			},
 			{
 				name: "justify-items",
@@ -987,7 +985,8 @@ export const data : any = {
 						name: "legacy"
 					}
 				],
-				"syntax": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ]"
+				"syntax": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/justify-items"
 			},
 			{
 				name: "justify-self",
@@ -1051,7 +1050,8 @@ export const data : any = {
 						name: "unsave"
 					}
 				],
-				"syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ]"
+				"syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/justify-self"
 			},
 			{
 				name: "align-self",
@@ -1084,7 +1084,8 @@ export const data : any = {
 						desc: "If the cross size property of the flex item computes to auto, and neither of the cross-axis margins are auto, the flex item is stretched."
 					}
 				],
-				"syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position>"
+				"syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/align-self"
 			},
 			{
 				name: "all",
@@ -1092,7 +1093,8 @@ export const data : any = {
 				browsers: "FF27,C37,O24",
 				restriction: "enum",
 				values: [],
-				"syntax": "initial | inherit | unset | revert"
+				"syntax": "initial | inherit | unset | revert",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/all"
 			},
 			{
 				name: "alt",
@@ -1140,14 +1142,16 @@ export const data : any = {
 						desc: "All iterations of the animation are played in the reverse direction from the way they were specified."
 					}
 				],
-				"syntax": "<single-animation>#"
+				"syntax": "<single-animation>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/animation"
 			},
 			{
 				name: "animation-delay",
 				desc: "Defines when the animation will start.",
 				browsers: "all",
 				restriction: "time",
-				"syntax": "<time>#"
+				"syntax": "<time>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/animation-delay"
 			},
 			{
 				name: "animation-direction",
@@ -1170,14 +1174,16 @@ export const data : any = {
 						desc: "All iterations of the animation are played in the reverse direction from the way they were specified."
 					}
 				],
-				"syntax": "<single-animation-direction>#"
+				"syntax": "<single-animation-direction>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/animation-direction"
 			},
 			{
 				name: "animation-duration",
 				desc: "Defines the length of time that an animation takes to complete one cycle.",
 				browsers: "all",
 				restriction: "time",
-				"syntax": "<time>#"
+				"syntax": "<time>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/animation-duration"
 			},
 			{
 				name: "animation-fill-mode",
@@ -1200,7 +1206,8 @@ export const data : any = {
 						desc: "There is no change to the property value between the time the animation is applied and the time the animation begins playing or after the animation completes."
 					}
 				],
-				"syntax": "<single-animation-fill-mode>#"
+				"syntax": "<single-animation-fill-mode>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/animation-fill-mode"
 			},
 			{
 				name: "animation-iteration-count",
@@ -1213,7 +1220,8 @@ export const data : any = {
 						desc: "Causes the animation to repeat forever."
 					}
 				],
-				"syntax": "<single-animation-iteration-count>#"
+				"syntax": "<single-animation-iteration-count>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/animation-iteration-count"
 			},
 			{
 				name: "animation-name",
@@ -1226,7 +1234,8 @@ export const data : any = {
 						desc: "No animation is performed"
 					}
 				],
-				"syntax": "[ none | <keyframes-name> ]#"
+				"syntax": "[ none | <keyframes-name> ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/animation-name"
 			},
 			{
 				name: "animation-play-state",
@@ -1241,14 +1250,16 @@ export const data : any = {
 						name: "running"
 					}
 				],
-				"syntax": "<single-animation-play-state>#"
+				"syntax": "<single-animation-play-state>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/animation-play-state"
 			},
 			{
 				name: "animation-timing-function",
 				desc: "Describes how the animation will progress over one cycle of its duration.",
 				browsers: "all",
 				restriction: "timing-function",
-				"syntax": "<single-timing-function>#"
+				"syntax": "<single-timing-function>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/animation-timing-function"
 			},
 			{
 				name: "backface-visibility",
@@ -1265,7 +1276,8 @@ export const data : any = {
 						desc: "Back side is visible."
 					}
 				],
-				"syntax": "visible | hidden"
+				"syntax": "visible | hidden",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/backface-visibility"
 			},
 			{
 				name: "background",
@@ -1290,7 +1302,8 @@ export const data : any = {
 						desc: "The background is fixed with regard to the element itself and does not scroll with its contents. (It is effectively attached to the element's border.)"
 					}
 				],
-				"syntax": "[ <bg-layer> , ]* <final-bg-layer>"
+				"syntax": "[ <bg-layer> , ]* <final-bg-layer>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background"
 			},
 			{
 				name: "background-attachment",
@@ -1312,7 +1325,8 @@ export const data : any = {
 						desc: "The background is fixed with regard to the element itself and does not scroll with its contents. (It is effectively attached to the element’s border.)"
 					}
 				],
-				"syntax": "<attachment>#"
+				"syntax": "<attachment>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-attachment"
 			},
 			{
 				name: "background-blend-mode",
@@ -1374,21 +1388,24 @@ export const data : any = {
 						browsers: "C35,FF30,O22"
 					}
 				],
-				"syntax": "<blend-mode>#"
+				"syntax": "<blend-mode>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-blend-mode"
 			},
 			{
 				name: "background-clip",
 				desc: "Determines the background painting area.",
 				browsers: "all",
 				restriction: "box",
-				"syntax": "<box>#"
+				"syntax": "<box>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-clip"
 			},
 			{
 				name: "background-color",
 				desc: "Sets the background color of an element.",
 				browsers: "all",
 				restriction: "color",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-color"
 			},
 			{
 				name: "background-image",
@@ -1401,21 +1418,24 @@ export const data : any = {
 						desc: "Counts as an image layer but draws nothing."
 					}
 				],
-				"syntax": "<bg-image>#"
+				"syntax": "<bg-image>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-image"
 			},
 			{
 				name: "background-origin",
 				desc: "For elements rendered as a single box, specifies the background positioning area. For elements rendered as multiple boxes (e.g., inline boxes on several lines, boxes on several pages) specifies which boxes 'box-decoration-break' operates on to determine the background positioning area(s).",
 				browsers: "all",
 				restriction: "box",
-				"syntax": "<box>#"
+				"syntax": "<box>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-origin"
 			},
 			{
 				name: "background-position",
 				desc: "Specifies the initial position of the background image(s) (after any resizing) within their corresponding background positioning area.",
 				browsers: "all",
 				restriction: "position, length, percentage",
-				"syntax": "<bg-position>#"
+				"syntax": "<bg-position>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-position"
 			},
 			{
 				name: "background-position-x",
@@ -1437,7 +1457,8 @@ export const data : any = {
 					}
 				],
 				"status": "e",
-				"syntax": "[ center | [ left | right | x-start | x-end ]? <length-percentage>? ]#"
+				"syntax": "[ center | [ left | right | x-start | x-end ]? <length-percentage>? ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-position-x"
 			},
 			{
 				name: "background-position-y",
@@ -1459,7 +1480,8 @@ export const data : any = {
 					}
 				],
 				"status": "e",
-				"syntax": "[ center | [ top | bottom | y-start | y-end ]? <length-percentage>? ]#"
+				"syntax": "[ center | [ top | bottom | y-start | y-end ]? <length-percentage>? ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-position-y"
 			},
 			{
 				name: "background-repeat",
@@ -1467,7 +1489,8 @@ export const data : any = {
 				browsers: "all",
 				restriction: "repeat",
 				values: [],
-				"syntax": "<repeat-style>#"
+				"syntax": "<repeat-style>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-repeat"
 			},
 			{
 				name: "background-size",
@@ -1488,7 +1511,8 @@ export const data : any = {
 						desc: "Scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area."
 					}
 				],
-				"syntax": "<bg-size>#"
+				"syntax": "<bg-size>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/background-size"
 			},
 			{
 				name: "behavior",
@@ -1507,112 +1531,128 @@ export const data : any = {
 						desc: "Depends on the values of other properties."
 					}
 				],
-				"syntax": "<'width'>"
+				"syntax": "<'width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/block-size"
 			},
 			{
 				name: "border",
 				desc: "Shorthand property for setting border width, style, and color.",
 				browsers: "all",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<line-width> || <line-style> || <color>"
+				"syntax": "<br-width> || <br-style> || <color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border"
 			},
 			{
 				name: "border-block-end",
 				desc: "Logical 'border-bottom'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<'border-width'> || <'border-style'> || <'color'>"
+				"syntax": "<'border-width'> || <'border-style'> || <'color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-block-end"
 			},
 			{
 				name: "border-block-start",
 				desc: "Logical 'border-top'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<'border-width'> || <'border-style'> || <'color'>"
+				"syntax": "<'border-width'> || <'border-style'> || <'color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-block-start"
 			},
 			{
 				name: "border-block-end-color",
 				desc: "Logical 'border-bottom-color'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "color",
-				"syntax": "<'color'>"
+				"syntax": "<'color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-block-end-color"
 			},
 			{
 				name: "border-block-start-color",
 				desc: "Logical 'border-top-color'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "color",
-				"syntax": "<'color'>"
+				"syntax": "<'color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-block-start-color"
 			},
 			{
 				name: "border-block-end-style",
 				desc: "Logical 'border-bottom-style'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "line-style",
-				"syntax": "<'border-style'>"
+				"syntax": "<'border-style'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-block-end-style"
 			},
 			{
 				name: "border-block-start-style",
 				desc: "Logical 'border-top-style'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "lline-style",
-				"syntax": "<'border-style'>"
+				"syntax": "<'border-style'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-block-start-style"
 			},
 			{
 				name: "border-block-end-width",
 				desc: "Logical 'border-bottom-width'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "length, line-width",
-				"syntax": "<'border-width'>"
+				"syntax": "<'border-width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-block-end-width"
 			},
 			{
 				name: "border-block-start-width",
 				desc: "Logical 'border-top-width'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "length, line-width",
-				"syntax": "<'border-width'>"
+				"syntax": "<'border-width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-block-start-width"
 			},
 			{
 				name: "border-bottom",
 				desc: "Shorthand property for setting border width, style and color.",
 				browsers: "all",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<line-width> || <line-style> || <color>"
+				"syntax": "<br-width> || <br-style> || <color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-bottom"
 			},
 			{
 				name: "border-bottom-color",
 				desc: "Sets the color of the bottom border.",
 				browsers: "all",
 				restriction: "color",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-bottom-color"
 			},
 			{
 				name: "border-bottom-left-radius",
 				desc: "Defines the radii of the bottom left outer border edge.",
 				browsers: "all",
 				restriction: "length, percentage",
-				"syntax": "<length-percentage>{1,2}"
+				"syntax": "<length-percentage>{1,2}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-bottom-left-radius"
 			},
 			{
 				name: "border-bottom-right-radius",
 				desc: "Defines the radii of the bottom right outer border edge.",
 				browsers: "all",
 				restriction: "length, percentage",
-				"syntax": "<length-percentage>{1,2}"
+				"syntax": "<length-percentage>{1,2}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-bottom-right-radius"
 			},
 			{
 				name: "border-bottom-style",
 				desc: "Sets the style of the bottom border.",
 				browsers: "all",
 				restriction: "line-style",
-				"syntax": "<line-style>"
+				"syntax": "<br-style>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-bottom-style"
 			},
 			{
 				name: "border-bottom-width",
 				desc: "Sets the thickness of the bottom border.",
 				browsers: "all",
 				restriction: "length, line-width",
-				"syntax": "<line-width>"
+				"syntax": "<br-width>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-bottom-width"
 			},
 			{
 				name: "border-collapse",
@@ -1629,7 +1669,8 @@ export const data : any = {
 						desc: "Selects the separated borders border model."
 					}
 				],
-				"syntax": "collapse | separate"
+				"syntax": "collapse | separate",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-collapse"
 			},
 			{
 				name: "border-color",
@@ -1637,7 +1678,8 @@ export const data : any = {
 				browsers: "all",
 				restriction: "color",
 				values: [],
-				"syntax": "<color>{1,4}"
+				"syntax": "<color>{1,4}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-color"
 			},
 			{
 				name: "border-image",
@@ -1676,14 +1718,16 @@ export const data : any = {
 						name: "url()"
 					}
 				],
-				"syntax": "<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>"
+				"syntax": "<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-image"
 			},
 			{
 				name: "border-image-outset",
 				desc: "The values specify the amount by which the border image area extends beyond the border box on the top, right, bottom, and left sides respectively. If the fourth value is absent, it is the same as the second. If the third one is also absent, it is the same as the first. If the second one is also absent, it is the same as the first. Numbers represent multiples of the corresponding border-width.",
 				browsers: "all",
 				restriction: "length, number",
-				"syntax": "[ <length> | <number> ]{1,4}"
+				"syntax": "[ <length> | <number> ]{1,4}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-image-outset"
 			},
 			{
 				name: "border-image-repeat",
@@ -1707,7 +1751,8 @@ export const data : any = {
 						desc: "The image is stretched to fill the area."
 					}
 				],
-				"syntax": "[ stretch | repeat | round | space ]{1,2}"
+				"syntax": "[ stretch | repeat | round | space ]{1,2}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-image-repeat"
 			},
 			{
 				name: "border-image-slice",
@@ -1720,7 +1765,8 @@ export const data : any = {
 						desc: "Causes the middle part of the border-image to be preserved."
 					}
 				],
-				"syntax": "<number-percentage>{1,4} && fill?"
+				"syntax": "<number-percentage>{1,4} && fill?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-image-slice"
 			},
 			{
 				name: "border-image-source",
@@ -1733,7 +1779,8 @@ export const data : any = {
 						desc: "Use the border styles."
 					}
 				],
-				"syntax": "none | <image>"
+				"syntax": "none | <image>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-image-source"
 			},
 			{
 				name: "border-image-width",
@@ -1746,133 +1793,152 @@ export const data : any = {
 						desc: "The border image width is the intrinsic width or height (whichever is applicable) of the corresponding image slice. If the image does not have the required intrinsic dimension then the corresponding border-width is used instead."
 					}
 				],
-				"syntax": "[ <length-percentage> | <number> | auto ]{1,4}"
+				"syntax": "[ <length-percentage> | <number> | auto ]{1,4}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-image-width"
 			},
 			{
 				name: "border-inline-end",
 				desc: "Logical 'border-right'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<'border-width'> || <'border-style'> || <'color'>"
+				"syntax": "<'border-width'> || <'border-style'> || <'color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-inline-end"
 			},
 			{
 				name: "border-inline-start",
 				desc: "Logical 'border-left'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<'border-width'> || <'border-style'> || <'color'>"
+				"syntax": "<'border-width'> || <'border-style'> || <'color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-inline-start"
 			},
 			{
 				name: "border-inline-end-color",
 				desc: "Logical 'border-right-color'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "color",
-				"syntax": "<'color'>"
+				"syntax": "<'color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-inline-end-color"
 			},
 			{
 				name: "border-inline-start-color",
 				desc: "Logical 'border-left-color'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "color",
-				"syntax": "<'color'>"
+				"syntax": "<'color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-inline-start-color"
 			},
 			{
 				name: "border-inline-end-style",
 				desc: "Logical 'border-right-style'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "line-style",
-				"syntax": "<'border-style'>"
+				"syntax": "<'border-style'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-inline-end-style"
 			},
 			{
 				name: "border-inline-start-style",
 				desc: "Logical 'border-left-style'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "lline-style",
-				"syntax": "<'border-style'>"
+				"syntax": "<'border-style'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-inline-start-style"
 			},
 			{
 				name: "border-inline-end-width",
 				desc: "Logical 'border-right-width'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "length, line-width",
-				"syntax": "<'border-width'>"
+				"syntax": "<'border-width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-inline-end-width"
 			},
 			{
 				name: "border-inline-start-width",
 				desc: "Logical 'border-left-width'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41",
 				restriction: "length, line-width",
-				"syntax": "<'border-width'>"
+				"syntax": "<'border-width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-inline-start-width"
 			},
 			{
 				name: "border-left",
 				desc: "Shorthand property for setting border width, style and color",
 				browsers: "all",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<line-width> || <line-style> || <color>"
+				"syntax": "<br-width> || <br-style> || <color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-left"
 			},
 			{
 				name: "border-left-color",
 				desc: "Sets the color of the left border.",
 				browsers: "all",
 				restriction: "color",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-left-color"
 			},
 			{
 				name: "border-left-style",
 				desc: "Sets the style of the left border.",
 				browsers: "all",
 				restriction: "line-style",
-				"syntax": "<line-style>"
+				"syntax": "<br-style>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-left-style"
 			},
 			{
 				name: "border-left-width",
 				desc: "Sets the thickness of the left border.",
 				browsers: "all",
 				restriction: "length, line-width",
-				"syntax": "<line-width>"
+				"syntax": "<br-width>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-left-width"
 			},
 			{
 				name: "border-radius",
 				desc: "Defines the radii of the outer border edge.",
 				browsers: "all",
 				restriction: "length, percentage",
-				"syntax": "<length-percentage>{1,4} [ / <length-percentage>{1,4} ]?"
+				"syntax": "<length-percentage>{1,4} [ / <length-percentage>{1,4} ]?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-radius"
 			},
 			{
 				name: "border-right",
 				desc: "Shorthand property for setting border width, style and color",
 				browsers: "all",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<line-width> || <line-style> || <color>"
+				"syntax": "<br-width> || <br-style> || <color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-right"
 			},
 			{
 				name: "border-right-color",
 				desc: "Sets the color of the right border.",
 				browsers: "all",
 				restriction: "color",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-right-color"
 			},
 			{
 				name: "border-right-style",
 				desc: "Sets the style of the right border.",
 				browsers: "all",
 				restriction: "line-style",
-				"syntax": "<line-style>"
+				"syntax": "<br-style>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-right-style"
 			},
 			{
 				name: "border-right-width",
 				desc: "Sets the thickness of the right border.",
 				browsers: "all",
 				restriction: "length, line-width",
-				"syntax": "<line-width>"
+				"syntax": "<br-width>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-right-width"
 			},
 			{
 				name: "border-spacing",
 				desc: "The lengths specify the distance that separates adjoining cell borders. If one length is specified, it gives both the horizontal and vertical spacing. If two are specified, the first gives the horizontal spacing and the second the vertical spacing. Lengths may not be negative.",
 				browsers: "all",
 				restriction: "length",
-				"syntax": "<length> <length>?"
+				"syntax": "<length> <length>?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-spacing"
 			},
 			{
 				name: "border-style",
@@ -1880,49 +1946,56 @@ export const data : any = {
 				browsers: "all",
 				restriction: "line-style",
 				values: [],
-				"syntax": "<line-style>{1,4}"
+				"syntax": "<br-style>{1,4}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-style"
 			},
 			{
 				name: "border-top",
 				desc: "Shorthand property for setting border width, style and color",
 				browsers: "all",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<line-width> || <line-style> || <color>"
+				"syntax": "<br-width> || <br-style> || <color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-top"
 			},
 			{
 				name: "border-top-color",
 				desc: "Sets the color of the top border.",
 				browsers: "all",
 				restriction: "color",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-top-color"
 			},
 			{
 				name: "border-top-left-radius",
 				desc: "Defines the radii of the top left outer border edge.",
 				browsers: "all",
 				restriction: "length, percentage",
-				"syntax": "<length-percentage>{1,2}"
+				"syntax": "<length-percentage>{1,2}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-top-left-radius"
 			},
 			{
 				name: "border-top-right-radius",
 				desc: "Defines the radii of the top right outer border edge.",
 				browsers: "all",
 				restriction: "length, percentage",
-				"syntax": "<length-percentage>{1,2}"
+				"syntax": "<length-percentage>{1,2}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-top-right-radius"
 			},
 			{
 				name: "border-top-style",
 				desc: "Sets the style of the top border.",
 				browsers: "all",
 				restriction: "line-style",
-				"syntax": "<line-style>"
+				"syntax": "<br-style>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-top-style"
 			},
 			{
 				name: "border-top-width",
 				desc: "Sets the thickness of the top border.",
 				browsers: "all",
 				restriction: "length, line-width",
-				"syntax": "<line-width>"
+				"syntax": "<br-width>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-top-width"
 			},
 			{
 				name: "border-width",
@@ -1930,7 +2003,8 @@ export const data : any = {
 				browsers: "all",
 				restriction: "length, line-width",
 				values: [],
-				"syntax": "<line-width>{1,4}"
+				"syntax": "<br-width>{1,4}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/border-width"
 			},
 			{
 				name: "bottom",
@@ -1943,7 +2017,8 @@ export const data : any = {
 						desc: "For non-replaced elements, the effect of this value depends on which of related properties have the value 'auto' as well"
 					}
 				],
-				"syntax": "<length> | <percentage> | auto"
+				"syntax": "<length> | <percentage> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/bottom"
 			},
 			{
 				name: "box-decoration-break",
@@ -1958,7 +2033,8 @@ export const data : any = {
 						name: "slice"
 					}
 				],
-				"syntax": "slice | clone"
+				"syntax": "slice | clone",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-decoration-break"
 			},
 			{
 				name: "box-shadow",
@@ -1974,7 +2050,8 @@ export const data : any = {
 						desc: "No shadow."
 					}
 				],
-				"syntax": "none | <shadow>#"
+				"syntax": "none | <shadow>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-shadow"
 			},
 			{
 				name: "box-sizing",
@@ -1989,7 +2066,8 @@ export const data : any = {
 						name: "content-box"
 					}
 				],
-				"syntax": "content-box | border-box"
+				"syntax": "content-box | border-box",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-sizing"
 			},
 			{
 				name: "break-after",
@@ -2034,7 +2112,8 @@ export const data : any = {
 						desc: "Force one or two page breaks before/after the generated box so that the next page is formatted as a right page."
 					}
 				],
-				"syntax": "auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region"
+				"syntax": "auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/break-after"
 			},
 			{
 				name: "break-before",
@@ -2079,7 +2158,8 @@ export const data : any = {
 						desc: "Force one or two page breaks before/after the generated box so that the next page is formatted as a right page."
 					}
 				],
-				"syntax": "auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region"
+				"syntax": "auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/break-before"
 			},
 			{
 				name: "break-inside",
@@ -2104,7 +2184,8 @@ export const data : any = {
 						desc: "Avoid a page break within the box."
 					}
 				],
-				"syntax": "auto | avoid | avoid-page | avoid-column | avoid-region"
+				"syntax": "auto | avoid | avoid-page | avoid-column | avoid-region",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/break-inside"
 			},
 			{
 				name: "caption-side",
@@ -2121,7 +2202,8 @@ export const data : any = {
 						desc: "Positions the caption box above the table box."
 					}
 				],
-				"syntax": "top | bottom | block-start | block-end | inline-start | inline-end"
+				"syntax": "top | bottom | block-start | block-end | inline-start | inline-end",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/caption-side"
 			},
 			{
 				name: "caret-color",
@@ -2134,7 +2216,8 @@ export const data : any = {
 						desc: "The user agent selects an appropriate color for the caret. This is generally currentcolor, but the user agent may choose a different color to ensure good visibility and contrast with the surrounding content, taking into account the value of currentcolor, the background, shadows, and other factors."
 					}
 				],
-				"syntax": "auto | <color>"
+				"syntax": "auto | <color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/caret-color"
 			},
 			{
 				name: "clear",
@@ -2159,7 +2242,8 @@ export const data : any = {
 						desc: "The clearance of the generated box is set to the amount necessary to place the top border edge below the bottom outer edge of any right-floating boxes that resulted from elements earlier in the source document."
 					}
 				],
-				"syntax": "none | left | right | both | inline-start | inline-end"
+				"syntax": "none | left | right | both | inline-start | inline-end",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/clear"
 			},
 			{
 				name: "clip",
@@ -2175,7 +2259,8 @@ export const data : any = {
 						name: "rect()"
 					}
 				],
-				"syntax": "<shape> | auto"
+				"syntax": "<shape> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/clip"
 			},
 			{
 				name: "clip-path",
@@ -2192,7 +2277,8 @@ export const data : any = {
 						desc: "References a <clipPath> element to create a clipping path."
 					}
 				],
-				"syntax": "<clip-source> | [ <basic-shape> || <geometry-box> ] | none"
+				"syntax": "<clip-source> | [ <basic-shape> || <geometry-box> ] | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/clip-path"
 			},
 			{
 				name: "clip-rule",
@@ -2213,7 +2299,8 @@ export const data : any = {
 				desc: "Color of an element's text",
 				browsers: "all",
 				restriction: "color",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/color"
 			},
 			{
 				name: "color-interpolation-filters",
@@ -2244,7 +2331,8 @@ export const data : any = {
 						desc: "Determines the number of columns by the 'column-width' property and the element width."
 					}
 				],
-				"syntax": "<integer> | auto"
+				"syntax": "<integer> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-count"
 			},
 			{
 				name: "column-fill",
@@ -2260,7 +2348,8 @@ export const data : any = {
 						name: "balance"
 					}
 				],
-				"syntax": "auto | balance | balance-all"
+				"syntax": "auto | balance | balance-all",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-fill"
 			},
 			{
 				name: "column-gap",
@@ -2273,35 +2362,40 @@ export const data : any = {
 						desc: "User agent specific and typically equivalent to 1em."
 					}
 				],
-				"syntax": "normal | <length-percentage>"
+				"syntax": "normal | <length-percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-gap"
 			},
 			{
 				name: "column-rule",
 				desc: "Shorthand for setting 'column-rule-width', 'column-rule-style', and 'column-rule-color' at the same place in the style sheet. Omitted values are set to their initial values.",
 				browsers: "all",
 				restriction: "length, line-width, line-style, color",
-				"syntax": "<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>"
+				"syntax": "<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-rule"
 			},
 			{
 				name: "column-rule-color",
 				desc: "Sets the color of the column rule",
 				browsers: "all",
 				restriction: "color",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-rule-color"
 			},
 			{
 				name: "column-rule-style",
 				desc: "Sets the style of the rule between columns of an element.",
 				browsers: "all",
 				restriction: "line-style",
-				"syntax": "<'border-style'>"
+				"syntax": "<'border-style'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-rule-style"
 			},
 			{
 				name: "column-rule-width",
 				desc: "Sets the width of the rule between columns. Negative values are not allowed.",
 				browsers: "all",
 				restriction: "length, line-width",
-				"syntax": "<'border-width'>"
+				"syntax": "<'border-width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-rule-width"
 			},
 			{
 				name: "columns",
@@ -2314,7 +2408,8 @@ export const data : any = {
 						desc: "The width depends on the values of other properties."
 					}
 				],
-				"syntax": "<'column-width'> || <'column-count'>"
+				"syntax": "<'column-width'> || <'column-count'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/columns"
 			},
 			{
 				name: "column-span",
@@ -2331,7 +2426,8 @@ export const data : any = {
 						desc: "The element does not span multiple columns."
 					}
 				],
-				"syntax": "none | all"
+				"syntax": "none | all",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-span"
 			},
 			{
 				name: "column-width",
@@ -2344,7 +2440,8 @@ export const data : any = {
 						desc: "The width depends on the values of other properties."
 					}
 				],
-				"syntax": "<length> | auto"
+				"syntax": "<length> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-width"
 			},
 			{
 				name: "contain",
@@ -2379,7 +2476,8 @@ export const data : any = {
 					}
 				],
 				"status": "e",
-				"syntax": "none | strict | content | [ size || layout || style || paint ]"
+				"syntax": "none | strict | content | [ size || layout || style || paint ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/contain"
 			},
 			{
 				name: "content",
@@ -2409,7 +2507,8 @@ export const data : any = {
 						name: "url()"
 					}
 				],
-				"syntax": "normal | none | [ <content-replacement> | <content-list> ] [/ <string> ]?"
+				"syntax": "normal | none | [ <content-replacement> | <content-list> ] [/ <string> ]?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/content"
 			},
 			{
 				name: "counter-increment",
@@ -2422,7 +2521,8 @@ export const data : any = {
 						desc: "This element does not alter the value of any counters."
 					}
 				],
-				"syntax": "[ <custom-ident> <integer>? ]+ | none"
+				"syntax": "[ <custom-ident> <integer>? ]+ | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/counter-increment"
 			},
 			{
 				name: "counter-reset",
@@ -2435,7 +2535,8 @@ export const data : any = {
 						desc: "The counter is not modified."
 					}
 				],
-				"syntax": "[ <custom-ident> <integer>? ]+ | none"
+				"syntax": "[ <custom-ident> <integer>? ]+ | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/counter-reset"
 			},
 			{
 				name: "cursor",
@@ -2592,7 +2693,8 @@ export const data : any = {
 						browsers: "E,C37,FF24,O12.1,S9"
 					}
 				],
-				"syntax": "[ [ <url> [ <x> <y> ]? , ]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out | grab | grabbing ] ]"
+				"syntax": "[ [ <url> [ <x> <y> ]? , ]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out | grab | grabbing ] ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/cursor"
 			},
 			{
 				name: "direction",
@@ -2607,7 +2709,8 @@ export const data : any = {
 						name: "rtl"
 					}
 				],
-				"syntax": "ltr | rtl"
+				"syntax": "ltr | rtl",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/direction"
 			},
 			{
 				name: "display",
@@ -2792,7 +2895,8 @@ export const data : any = {
 						browsers: "C21,O15,S6.1"
 					}
 				],
-				"syntax": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>"
+				"syntax": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/display"
 			},
 			{
 				name: "empty-cells",
@@ -2811,7 +2915,8 @@ export const data : any = {
 						name: "show"
 					}
 				],
-				"syntax": "show | hide"
+				"syntax": "show | hide",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/empty-cells"
 			},
 			{
 				name: "enable-background",
@@ -2912,7 +3017,8 @@ export const data : any = {
 						browsers: "FF3.6"
 					}
 				],
-				"syntax": "none | <filter-function-list>"
+				"syntax": "none | <filter-function-list>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/filter"
 			},
 			{
 				name: "flex",
@@ -2934,7 +3040,8 @@ export const data : any = {
 						desc: "Expands to '0 0 auto'."
 					}
 				],
-				"syntax": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]"
+				"syntax": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/flex"
 			},
 			{
 				name: "flex-basis",
@@ -2952,7 +3059,8 @@ export const data : any = {
 						browsers: "E,IE11"
 					}
 				],
-				"syntax": "content | <'width'>"
+				"syntax": "content | <'width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/flex-basis"
 			},
 			{
 				name: "flex-direction",
@@ -2975,7 +3083,8 @@ export const data : any = {
 						name: "row-reverse"
 					}
 				],
-				"syntax": "row | row-reverse | column | column-reverse"
+				"syntax": "row | row-reverse | column | column-reverse",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/flex-direction"
 			},
 			{
 				name: "flex-flow",
@@ -3009,21 +3118,24 @@ export const data : any = {
 						name: "wrap-reverse"
 					}
 				],
-				"syntax": "<'flex-direction'> || <'flex-wrap'>"
+				"syntax": "<'flex-direction'> || <'flex-wrap'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/flex-flow"
 			},
 			{
 				name: "flex-grow",
 				desc: "Sets the flex grow factor. Negative numbers are invalid.",
 				browsers: "all",
 				restriction: "number",
-				"syntax": "<number>"
+				"syntax": "<number>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/flex-grow"
 			},
 			{
 				name: "flex-shrink",
 				desc: "Sets the flex shrink factor. Negative numbers are invalid.",
 				browsers: "all",
 				restriction: "number",
-				"syntax": "<number>"
+				"syntax": "<number>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/flex-shrink"
 			},
 			{
 				name: "flex-wrap",
@@ -3043,7 +3155,8 @@ export const data : any = {
 						name: "wrap-reverse"
 					}
 				],
-				"syntax": "nowrap | wrap | wrap-reverse"
+				"syntax": "nowrap | wrap | wrap-reverse",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/flex-wrap"
 			},
 			{
 				name: "float",
@@ -3072,7 +3185,8 @@ export const data : any = {
 						desc: "Similar to 'left', except the box is floated to the right, and content flows on the left side of the box, starting at the top."
 					}
 				],
-				"syntax": "left | right | none | inline-start | inline-end"
+				"syntax": "left | right | none | inline-start | inline-end",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/float"
 			},
 			{
 				name: "flood-color",
@@ -3191,7 +3305,8 @@ export const data : any = {
 						name: "xx-small"
 					}
 				],
-				"syntax": "[ [ <'font-style'> || <font-variant-css21> || <'font-weight'> || <'font-stretch'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar"
+				"syntax": "[ [ <'font-style'> || <font-variant-css21> || <'font-weight'> || <'font-stretch'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font"
 			},
 			{
 				name: "font-family",
@@ -3656,7 +3771,8 @@ export const data : any = {
 						desc: "Specifies that kerning is applied."
 					}
 				],
-				"syntax": "auto | normal | none"
+				"syntax": "auto | normal | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-kerning"
 			},
 			{
 				name: "font-language-override",
@@ -3669,7 +3785,8 @@ export const data : any = {
 						desc: "Implies that when rendering with OpenType fonts the language of the document is used to infer the OpenType language system, used to select language specific features when rendering."
 					}
 				],
-				"syntax": "normal | <string>"
+				"syntax": "normal | <string>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-language-override"
 			},
 			{
 				name: "font-size",
@@ -3705,7 +3822,8 @@ export const data : any = {
 						name: "xx-small"
 					}
 				],
-				"syntax": "<absolute-size> | <relative-size> | <length-percentage>"
+				"syntax": "<absolute-size> | <relative-size> | <length-percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-size"
 			},
 			{
 				name: "font-size-adjust",
@@ -3718,7 +3836,8 @@ export const data : any = {
 						desc: "Do not preserve the font’s x-height."
 					}
 				],
-				"syntax": "none | <number>"
+				"syntax": "none | <number>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-size-adjust"
 			},
 			{
 				name: "font-stretch",
@@ -3803,7 +3922,8 @@ export const data : any = {
 						name: "weight"
 					}
 				],
-				"syntax": "none | [ weight || style ]"
+				"syntax": "none | [ weight || style ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-synthesis"
 			},
 			{
 				name: "font-variant",
@@ -3854,7 +3974,8 @@ export const data : any = {
 						name: "swash()"
 					}
 				],
-				"syntax": "normal | [ stylistic( <feature-value-name> ) || historical-forms || styleset( <feature-value-name># ) || character-variant( <feature-value-name># ) || swash( <feature-value-name> ) || ornaments( <feature-value-name> ) || annotation( <feature-value-name> ) ]"
+				"syntax": "normal | [ stylistic( <feature-value-name> ) || historical-forms || styleset( <feature-value-name># ) || character-variant( <feature-value-name># ) || swash( <feature-value-name> ) || ornaments( <feature-value-name> ) || annotation( <feature-value-name> ) ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-alternates"
 			},
 			{
 				name: "font-variant-caps",
@@ -3886,7 +4007,8 @@ export const data : any = {
 						name: "unicase"
 					}
 				],
-				"syntax": "normal | small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps"
+				"syntax": "normal | small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-caps"
 			},
 			{
 				name: "font-variant-east-asian",
@@ -3927,7 +4049,8 @@ export const data : any = {
 						name: "traditional"
 					}
 				],
-				"syntax": "normal | [ <east-asian-variant-values> || <east-asian-width-values> || ruby ]"
+				"syntax": "normal | [ <east-asian-variant-values> || <east-asian-width-values> || ruby ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-east-asian"
 			},
 			{
 				name: "font-variant-ligatures",
@@ -3977,7 +4100,8 @@ export const data : any = {
 						desc: "Implies that the defaults set by the font are used."
 					}
 				],
-				"syntax": "normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ]"
+				"syntax": "normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-ligatures"
 			},
 			{
 				name: "font-variant-numeric",
@@ -4014,7 +4138,8 @@ export const data : any = {
 						name: "tabular-nums"
 					}
 				],
-				"syntax": "normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ]"
+				"syntax": "normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-numeric"
 			},
 			{
 				name: "font-variant-position",
@@ -4035,7 +4160,8 @@ export const data : any = {
 						desc: "Enables display of superscript variants (OpenType feature: sups)."
 					}
 				],
-				"syntax": "normal | sub | super"
+				"syntax": "normal | sub | super",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-variant-position"
 			},
 			{
 				name: "font-weight",
@@ -4116,14 +4242,16 @@ export const data : any = {
 						name: "span"
 					}
 				],
-				"syntax": "<grid-line> [ / <grid-line> ]{0,3}"
+				"syntax": "<grid-line> [ / <grid-line> ]{0,3}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-area"
 			},
 			{
 				name: "grid",
 				desc: "The grid CSS property is a shorthand property that sets all of the explicit grid properties ('grid-template-rows', 'grid-template-columns', and 'grid-template-areas'), and all the implicit grid properties ('grid-auto-rows', 'grid-auto-columns', and 'grid-auto-flow'), in a single declaration.",
 				browsers: "E16,FF52,S10.1,C57,O44",
 				restriction: "identifier, length, percentage, string, enum",
-				"syntax": "<'grid-template'> | <'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>? | [ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>"
+				"syntax": "<'grid-template'> | <'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>? | [ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid"
 			},
 			{
 				name: "grid-auto-columns",
@@ -4147,7 +4275,8 @@ export const data : any = {
 						name: "minmax()"
 					}
 				],
-				"syntax": "<track-size>+"
+				"syntax": "<track-size>+",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-auto-columns"
 			},
 			{
 				name: "grid-auto-flow",
@@ -4167,7 +4296,8 @@ export const data : any = {
 						name: "dense"
 					}
 				],
-				"syntax": "[ row | column ] || dense"
+				"syntax": "[ row | column ] || dense",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-auto-flow"
 			},
 			{
 				name: "grid-auto-rows",
@@ -4191,7 +4321,8 @@ export const data : any = {
 						name: "minmax()"
 					}
 				],
-				"syntax": "<track-size>+"
+				"syntax": "<track-size>+",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-auto-rows"
 			},
 			{
 				name: "grid-column",
@@ -4207,7 +4338,8 @@ export const data : any = {
 						name: "span"
 					}
 				],
-				"syntax": "<grid-line> [ / <grid-line> ]?"
+				"syntax": "<grid-line> [ / <grid-line> ]?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-column"
 			},
 			{
 				name: "grid-column-end",
@@ -4223,7 +4355,8 @@ export const data : any = {
 						name: "span"
 					}
 				],
-				"syntax": "<grid-line>"
+				"syntax": "<grid-line>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-column-end"
 			},
 			{
 				name: "grid-column-gap",
@@ -4231,7 +4364,8 @@ export const data : any = {
 				browsers: "FF52,C57,S10.1,O44",
 				restriction: "length",
 				"status": "o",
-				"syntax": "<length-percentage>"
+				"syntax": "<length-percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/column-gap"
 			},
 			{
 				name: "grid-column-start",
@@ -4247,7 +4381,8 @@ export const data : any = {
 						name: "span"
 					}
 				],
-				"syntax": "<grid-line>"
+				"syntax": "<grid-line>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-column-start"
 			},
 			{
 				name: "grid-gap",
@@ -4255,7 +4390,8 @@ export const data : any = {
 				browsers: "FF52,C57,S10.1,O44",
 				restriction: "length",
 				"status": "o",
-				"syntax": "<'grid-row-gap'> <'grid-column-gap'>?"
+				"syntax": "<'grid-row-gap'> <'grid-column-gap'>?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/gap"
 			},
 			{
 				name: "grid-row",
@@ -4271,7 +4407,8 @@ export const data : any = {
 						name: "span"
 					}
 				],
-				"syntax": "<grid-line> [ / <grid-line> ]?"
+				"syntax": "<grid-line> [ / <grid-line> ]?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-row"
 			},
 			{
 				name: "grid-row-end",
@@ -4287,7 +4424,8 @@ export const data : any = {
 						name: "span"
 					}
 				],
-				"syntax": "<grid-line>"
+				"syntax": "<grid-line>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-row-end"
 			},
 			{
 				name: "grid-row-gap",
@@ -4295,7 +4433,8 @@ export const data : any = {
 				browsers: "FF52,C57,S10.1,O44",
 				restriction: "length",
 				"status": "o",
-				"syntax": "<length-percentage>"
+				"syntax": "<length-percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/row-gap"
 			},
 			{
 				name: "grid-row-start",
@@ -4311,7 +4450,8 @@ export const data : any = {
 						name: "span"
 					}
 				],
-				"syntax": "<grid-line>"
+				"syntax": "<grid-line>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-row-start"
 			},
 			{
 				name: "grid-template",
@@ -4347,7 +4487,8 @@ export const data : any = {
 						desc: "Represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form."
 					}
 				],
-				"syntax": "none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?"
+				"syntax": "none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-template"
 			},
 			{
 				name: "grid-template-areas",
@@ -4360,7 +4501,8 @@ export const data : any = {
 						desc: "The grid container doesn’t define any named grid areas."
 					}
 				],
-				"syntax": "none | <string>+"
+				"syntax": "none | <string>+",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-template-areas"
 			},
 			{
 				name: "grid-template-columns",
@@ -4396,7 +4538,8 @@ export const data : any = {
 						desc: "Represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form."
 					}
 				],
-				"syntax": "none | <track-list> | <auto-track-list>"
+				"syntax": "none | <track-list> | <auto-track-list>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-template-columns"
 			},
 			{
 				name: "grid-template-rows",
@@ -4432,7 +4575,8 @@ export const data : any = {
 						desc: "Represents a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form."
 					}
 				],
-				"syntax": "none | <track-list> | <auto-track-list>"
+				"syntax": "none | <track-list> | <auto-track-list>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/grid-template-rows"
 			},
 			{
 				name: "height",
@@ -4479,7 +4623,8 @@ export const data : any = {
 						desc: "Words are not broken at line breaks, even if characters inside the word suggest line break points."
 					}
 				],
-				"syntax": "none | manual | auto"
+				"syntax": "none | manual | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/hyphens"
 			},
 			{
 				name: "image-orientation",
@@ -4494,7 +4639,8 @@ export const data : any = {
 						name: "from-image"
 					}
 				],
-				"syntax": "from-image | <angle> | [ <angle>? flip ]"
+				"syntax": "from-image | <angle> | [ <angle>? flip ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/image-orientation"
 			},
 			{
 				name: "image-rendering",
@@ -4524,7 +4670,8 @@ export const data : any = {
 						name: "pixelated"
 					}
 				],
-				"syntax": "auto | crisp-edges | pixelated"
+				"syntax": "auto | crisp-edges | pixelated",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/image-rendering"
 			},
 			{
 				name: "ime-mode",
@@ -4551,7 +4698,8 @@ export const data : any = {
 					}
 				],
 				"status": "o",
-				"syntax": "auto | normal | active | inactive | disabled"
+				"syntax": "auto | normal | active | inactive | disabled",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/ime-mode"
 			},
 			{
 				name: "inline-size",
@@ -4564,7 +4712,8 @@ export const data : any = {
 						desc: "Depends on the values of other properties."
 					}
 				],
-				"syntax": "<'width'>"
+				"syntax": "<'width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/inline-size"
 			},
 			{
 				name: "isolation",
@@ -4581,7 +4730,8 @@ export const data : any = {
 						desc: "In CSS will turn the element into a stacking context."
 					}
 				],
-				"syntax": "auto | isolate"
+				"syntax": "auto | isolate",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/isolation"
 			},
 			{
 				name: "justify-content",
@@ -4651,7 +4801,8 @@ export const data : any = {
 						desc: "Specifies participation in last-baseline alignment."
 					}
 				],
-				"syntax": "normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ]"
+				"syntax": "normal | <content-distribution> | <overflow-position>? [ <content-position> | left | right ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/justify-content"
 			},
 			{
 				name: "kerning",
@@ -4675,7 +4826,8 @@ export const data : any = {
 						desc: "For non-replaced elements, the effect of this value depends on which of related properties have the value 'auto' as well"
 					}
 				],
-				"syntax": "<length> | <percentage> | auto"
+				"syntax": "<length> | <percentage> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/left"
 			},
 			{
 				name: "letter-spacing",
@@ -4688,7 +4840,8 @@ export const data : any = {
 						desc: "The spacing is the normal spacing for the current font. It is typically zero-length."
 					}
 				],
-				"syntax": "normal | <length>"
+				"syntax": "normal | <length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/letter-spacing"
 			},
 			{
 				name: "lighting-color",
@@ -4719,7 +4872,8 @@ export const data : any = {
 						desc: "Breaks CJK scripts using a more restrictive set of line-breaking rules than 'normal'."
 					}
 				],
-				"syntax": "auto | loose | normal | strict"
+				"syntax": "auto | loose | normal | strict",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/line-break"
 			},
 			{
 				name: "line-height",
@@ -4732,7 +4886,8 @@ export const data : any = {
 						desc: "Tells user agents to set the computed value to a 'reasonable' value based on the font size of the element."
 					}
 				],
-				"syntax": "normal | <number> | <length> | <percentage>"
+				"syntax": "normal | <number> | <length> | <percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/line-height"
 			},
 			{
 				name: "list-style",
@@ -4800,7 +4955,8 @@ export const data : any = {
 						name: "url()"
 					}
 				],
-				"syntax": "<'list-style-type'> || <'list-style-position'> || <'list-style-image'>"
+				"syntax": "<'list-style-type'> || <'list-style-position'> || <'list-style-image'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/list-style"
 			},
 			{
 				name: "list-style-image",
@@ -4813,7 +4969,8 @@ export const data : any = {
 						desc: "The default contents of the of the list item’s marker are given by 'list-style-type' instead."
 					}
 				],
-				"syntax": "<url> | none"
+				"syntax": "<url> | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/list-style-image"
 			},
 			{
 				name: "list-style-position",
@@ -4828,7 +4985,8 @@ export const data : any = {
 						name: "outside"
 					}
 				],
-				"syntax": "inside | outside"
+				"syntax": "inside | outside",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/list-style-position"
 			},
 			{
 				name: "list-style-type",
@@ -4899,7 +5057,8 @@ export const data : any = {
 						desc: "Uppercase ASCII Roman numerals."
 					}
 				],
-				"syntax": "<counter-style> | <string> | none"
+				"syntax": "<counter-style> | <string> | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/list-style-type"
 			},
 			{
 				name: "margin",
@@ -4911,7 +5070,8 @@ export const data : any = {
 						name: "auto"
 					}
 				],
-				"syntax": "[ <length> | <percentage> | auto ]{1,4}"
+				"syntax": "[ <length> | <percentage> | auto ]{1,4}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/margin"
 			},
 			{
 				name: "margin-block-end",
@@ -4923,7 +5083,8 @@ export const data : any = {
 						name: "auto"
 					}
 				],
-				"syntax": "<'margin-left'>"
+				"syntax": "<'margin-left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/margin-block-end"
 			},
 			{
 				name: "margin-block-start",
@@ -4935,7 +5096,8 @@ export const data : any = {
 						name: "auto"
 					}
 				],
-				"syntax": "<'margin-left'>"
+				"syntax": "<'margin-left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/margin-block-start"
 			},
 			{
 				name: "margin-bottom",
@@ -4947,7 +5109,8 @@ export const data : any = {
 						name: "auto"
 					}
 				],
-				"syntax": "<length> | <percentage> | auto"
+				"syntax": "<length> | <percentage> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/margin-bottom"
 			},
 			{
 				name: "margin-inline-end",
@@ -4959,7 +5122,8 @@ export const data : any = {
 						name: "auto"
 					}
 				],
-				"syntax": "<'margin-left'>"
+				"syntax": "<'margin-left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/margin-inline-end"
 			},
 			{
 				name: "margin-inline-start",
@@ -4971,7 +5135,8 @@ export const data : any = {
 						name: "auto"
 					}
 				],
-				"syntax": "<'margin-left'>"
+				"syntax": "<'margin-left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/margin-inline-start"
 			},
 			{
 				name: "margin-left",
@@ -4983,7 +5148,8 @@ export const data : any = {
 						name: "auto"
 					}
 				],
-				"syntax": "<length> | <percentage> | auto"
+				"syntax": "<length> | <percentage> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/margin-left"
 			},
 			{
 				name: "margin-right",
@@ -4995,7 +5161,8 @@ export const data : any = {
 						name: "auto"
 					}
 				],
-				"syntax": "<length> | <percentage> | auto"
+				"syntax": "<length> | <percentage> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/margin-right"
 			},
 			{
 				name: "margin-top",
@@ -5007,7 +5174,8 @@ export const data : any = {
 						name: "auto"
 					}
 				],
-				"syntax": "<length> | <percentage> | auto"
+				"syntax": "<length> | <percentage> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/margin-top"
 			},
 			{
 				name: "marker",
@@ -5084,7 +5252,8 @@ export const data : any = {
 						desc: "Reference to a <mask element or to a CSS image."
 					}
 				],
-				"syntax": "<mask-reference>#"
+				"syntax": "<mask-reference>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-image"
 			},
 			{
 				name: "mask-mode",
@@ -5105,28 +5274,32 @@ export const data : any = {
 						desc: "Luminance values of the mask layer image should be used as the mask values."
 					}
 				],
-				"syntax": "<masking-mode>#"
+				"syntax": "<masking-mode>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-mode"
 			},
 			{
 				name: "mask-origin",
 				desc: "Specifies the mask positioning area.",
 				browsers: "FF53,S,C,O",
 				restriction: "geometry-box, enum",
-				"syntax": "<geometry-box>#"
+				"syntax": "<geometry-box>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-origin"
 			},
 			{
 				name: "mask-position",
 				desc: "Specifies how mask layer images are positioned.",
 				browsers: "FF53,S4,C1",
 				restriction: "position, length, percentage",
-				"syntax": "<position>#"
+				"syntax": "<position>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-position"
 			},
 			{
 				name: "mask-repeat",
 				desc: "Specifies how mask layer images are tiled after they have been sized and positioned.",
 				browsers: "FF53,S4,C1",
 				restriction: "repeat",
-				"syntax": "<repeat-style>#"
+				"syntax": "<repeat-style>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-repeat"
 			},
 			{
 				name: "mask-size",
@@ -5147,7 +5320,8 @@ export const data : any = {
 						desc: "Scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area."
 					}
 				],
-				"syntax": "<bg-size>#"
+				"syntax": "<bg-size>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-size"
 			},
 			{
 				name: "mask-type",
@@ -5164,7 +5338,8 @@ export const data : any = {
 						desc: "Indicates that the luminance values of the mask should be used."
 					}
 				],
-				"syntax": "luminance | alpha"
+				"syntax": "luminance | alpha",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-type"
 			},
 			{
 				name: "max-block-size",
@@ -5178,7 +5353,8 @@ export const data : any = {
 					}
 				],
 				"status": "e",
-				"syntax": "<'max-width'>"
+				"syntax": "<'max-width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/max-block-size"
 			},
 			{
 				name: "max-height",
@@ -5219,7 +5395,8 @@ export const data : any = {
 					}
 				],
 				"status": "e",
-				"syntax": "<'max-width'>"
+				"syntax": "<'max-width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/max-inline-size"
 			},
 			{
 				name: "max-width",
@@ -5253,7 +5430,8 @@ export const data : any = {
 				desc: "Logical 'min-width'. Mapping depends on the element’s 'writing-mode'.",
 				browsers: "FF41",
 				restriction: "length, percentage",
-				"syntax": "<'min-width'>"
+				"syntax": "<'min-width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/min-block-size"
 			},
 			{
 				name: "min-height",
@@ -5287,7 +5465,8 @@ export const data : any = {
 				desc: "Logical 'min-height'. Mapping depends on the element’s 'writing-mode'.",
 				browsers: "FF41",
 				restriction: "length, percentage",
-				"syntax": "<'min-width'>"
+				"syntax": "<'min-width'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/min-inline-size"
 			},
 			{
 				name: "min-width",
@@ -5376,7 +5555,8 @@ export const data : any = {
 						browsers: "C41,FF32,O29"
 					}
 				],
-				"syntax": "<blend-mode>"
+				"syntax": "<blend-mode>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mix-blend-mode"
 			},
 			{
 				name: "motion",
@@ -5768,7 +5948,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | button | button-arrow-down | button-arrow-next | button-arrow-previous | button-arrow-up | button-bevel | button-focus | caret | checkbox | checkbox-container | checkbox-label | checkmenuitem | dualbutton | groupbox | listbox | listitem | menuarrow | menubar | menucheckbox | menuimage | menuitem | menuitemtext | menulist | menulist-button | menulist-text | menulist-textfield | menupopup | menuradio | menuseparator | meterbar | meterchunk | progressbar | progressbar-vertical | progresschunk | progresschunk-vertical | radio | radio-container | radio-label | radiomenuitem | range | range-thumb | resizer | resizerpanel | scale-horizontal | scalethumbend | scalethumb-horizontal | scalethumbstart | scalethumbtick | scalethumb-vertical | scale-vertical | scrollbarbutton-down | scrollbarbutton-left | scrollbarbutton-right | scrollbarbutton-up | scrollbarthumb-horizontal | scrollbarthumb-vertical | scrollbartrack-horizontal | scrollbartrack-vertical | searchfield | separator | sheet | spinner | spinner-downbutton | spinner-textfield | spinner-upbutton | splitter | statusbar | statusbarpanel | tab | tabpanel | tabpanels | tab-scroll-arrow-back | tab-scroll-arrow-forward | textfield | textfield-multiline | toolbar | toolbarbutton | toolbarbutton-dropdown | toolbargripper | toolbox | tooltip | treeheader | treeheadercell | treeheadersortarrow | treeitem | treeline | treetwisty | treetwistyopen | treeview | -moz-mac-unified-toolbar | -moz-win-borderless-glass | -moz-win-browsertabbar-toolbox | -moz-win-communicationstext | -moz-win-communications-toolbox | -moz-win-exclude-glass | -moz-win-glass | -moz-win-mediatext | -moz-win-media-toolbox | -moz-window-button-box | -moz-window-button-box-maximized | -moz-window-button-close | -moz-window-button-maximize | -moz-window-button-minimize | -moz-window-button-restore | -moz-window-frame-bottom | -moz-window-frame-left | -moz-window-frame-right | -moz-window-titlebar | -moz-window-titlebar-maximized"
+				"syntax": "none | button | button-arrow-down | button-arrow-next | button-arrow-previous | button-arrow-up | button-bevel | button-focus | caret | checkbox | checkbox-container | checkbox-label | checkmenuitem | dualbutton | groupbox | listbox | listitem | menuarrow | menubar | menucheckbox | menuimage | menuitem | menuitemtext | menulist | menulist-button | menulist-text | menulist-textfield | menupopup | menuradio | menuseparator | meterbar | meterchunk | progressbar | progressbar-vertical | progresschunk | progresschunk-vertical | radio | radio-container | radio-label | radiomenuitem | range | range-thumb | resizer | resizerpanel | scale-horizontal | scalethumbend | scalethumb-horizontal | scalethumbstart | scalethumbtick | scalethumb-vertical | scale-vertical | scrollbarbutton-down | scrollbarbutton-left | scrollbarbutton-right | scrollbarbutton-up | scrollbarthumb-horizontal | scrollbarthumb-vertical | scrollbartrack-horizontal | scrollbartrack-vertical | searchfield | separator | sheet | spinner | spinner-downbutton | spinner-textfield | spinner-upbutton | splitter | statusbar | statusbarpanel | tab | tabpanel | tabpanels | tab-scroll-arrow-back | tab-scroll-arrow-forward | textfield | textfield-multiline | toolbar | toolbarbutton | toolbarbutton-dropdown | toolbargripper | toolbox | tooltip | treeheader | treeheadercell | treeheadersortarrow | treeitem | treeline | treetwisty | treetwistyopen | treeview | -moz-mac-unified-toolbar | -moz-win-borderless-glass | -moz-win-browsertabbar-toolbox | -moz-win-communicationstext | -moz-win-communications-toolbox | -moz-win-exclude-glass | -moz-win-glass | -moz-win-mediatext | -moz-win-media-toolbox | -moz-window-button-box | -moz-window-button-box-maximized | -moz-window-button-close | -moz-window-button-maximize | -moz-window-button-minimize | -moz-window-button-restore | -moz-window-frame-bottom | -moz-window-frame-left | -moz-window-frame-right | -moz-window-titlebar | -moz-window-titlebar-maximized",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-appearance"
 			},
 			{
 				name: "-moz-backface-visibility",
@@ -5824,7 +6005,8 @@ export const data : any = {
 				browsers: "FF1",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>+ | none"
+				"syntax": "<color>+ | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-border-bottom-colors"
 			},
 			{
 				name: "-moz-border-image",
@@ -5869,7 +6051,8 @@ export const data : any = {
 				browsers: "FF1",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>+ | none"
+				"syntax": "<color>+ | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-border-left-colors"
 			},
 			{
 				name: "-moz-border-right-colors",
@@ -5877,7 +6060,8 @@ export const data : any = {
 				browsers: "FF1",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>+ | none"
+				"syntax": "<color>+ | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-border-right-colors"
 			},
 			{
 				name: "-moz-border-top-colors",
@@ -5885,7 +6069,8 @@ export const data : any = {
 				browsers: "FF1",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>+ | none"
+				"syntax": "<color>+ | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-border-top-colors"
 			},
 			{
 				name: "-moz-box-align",
@@ -6408,7 +6593,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "ignore | normal | select-after | select-before | select-menu | select-same | select-all | none"
+				"syntax": "ignore | normal | select-after | select-before | select-menu | select-same | select-all | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-user-focus"
 			},
 			{
 				name: "-moz-user-select",
@@ -6456,7 +6642,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "false | true"
+				"syntax": "false | true",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-accelerator"
 			},
 			{
 				name: "-ms-behavior",
@@ -6484,7 +6671,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "tb | rl | bt | lr"
+				"syntax": "tb | rl | bt | lr",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-block-progression"
 			},
 			{
 				name: "-ms-content-zoom-chaining",
@@ -6501,7 +6689,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | chained"
+				"syntax": "none | chained",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-content-zoom-chaining"
 			},
 			{
 				name: "-ms-content-zooming",
@@ -6518,7 +6707,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | zoom"
+				"syntax": "none | zoom",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-content-zooming"
 			},
 			{
 				name: "-ms-content-zoom-limit",
@@ -6526,7 +6716,8 @@ export const data : any = {
 				browsers: "E,IE10",
 				restriction: "percentage",
 				"status": "n",
-				"syntax": "<'-ms-content-zoom-limit-min'> <'-ms-content-zoom-limit-max'>"
+				"syntax": "<'-ms-content-zoom-limit-min'> <'-ms-content-zoom-limit-max'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-content-zoom-limit"
 			},
 			{
 				name: "-ms-content-zoom-limit-max",
@@ -6534,7 +6725,8 @@ export const data : any = {
 				browsers: "E,IE10",
 				restriction: "percentage",
 				"status": "n",
-				"syntax": "<percentage>"
+				"syntax": "<percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-content-zoom-limit-max"
 			},
 			{
 				name: "-ms-content-zoom-limit-min",
@@ -6542,7 +6734,8 @@ export const data : any = {
 				browsers: "E,IE10",
 				restriction: "percentage",
 				"status": "n",
-				"syntax": "<percentage>"
+				"syntax": "<percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-content-zoom-limit-min"
 			},
 			{
 				name: "-ms-content-zoom-snap",
@@ -6571,7 +6764,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "<'-ms-content-zoom-snap-type'> || <'-ms-content-zoom-snap-points'>"
+				"syntax": "<'-ms-content-zoom-snap-type'> || <'-ms-content-zoom-snap-points'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-content-zoom-snap"
 			},
 			{
 				name: "-ms-content-zoom-snap-points",
@@ -6588,7 +6782,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "snapInterval( <percentage>, <percentage> ) | snapList( <percentage># )"
+				"syntax": "snapInterval( <percentage>, <percentage> ) | snapList( <percentage># )",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-content-zoom-snap-points"
 			},
 			{
 				name: "-ms-content-zoom-snap-type",
@@ -6610,7 +6805,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | proximity | mandatory"
+				"syntax": "none | proximity | mandatory",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-content-zoom-snap-type"
 			},
 			{
 				name: "-ms-filter",
@@ -6618,7 +6814,8 @@ export const data : any = {
 				browsers: "IE8-9",
 				restriction: "string",
 				"status": "n",
-				"syntax": "<string>"
+				"syntax": "<string>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-filter"
 			},
 			{
 				name: "-ms-flex",
@@ -6845,7 +7042,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "[ none | <custom-ident> ]#"
+				"syntax": "[ none | <custom-ident> ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-flow-from"
 			},
 			{
 				name: "-ms-flow-into",
@@ -6859,7 +7057,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "[ none | <custom-ident> ]#"
+				"syntax": "[ none | <custom-ident> ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-flow-into"
 			},
 			{
 				name: "-ms-grid-column",
@@ -6987,7 +7186,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "auto | none"
+				"syntax": "auto | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-high-contrast-adjust"
 			},
 			{
 				name: "-ms-hyphenate-limit-chars",
@@ -7001,7 +7201,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "auto | <integer>{1,3}"
+				"syntax": "auto | <integer>{1,3}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-hyphenate-limit-chars"
 			},
 			{
 				name: "-ms-hyphenate-limit-lines",
@@ -7014,7 +7215,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "no-limit | <integer>"
+				"syntax": "no-limit | <integer>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-hyphenate-limit-lines"
 			},
 			{
 				name: "-ms-hyphenate-limit-zone",
@@ -7022,7 +7224,8 @@ export const data : any = {
 				browsers: "E,IE10",
 				restriction: "percentage, length",
 				"status": "n",
-				"syntax": "<percentage> | <length>"
+				"syntax": "<percentage> | <length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-hyphenate-limit-zone"
 			},
 			{
 				name: "-ms-hyphens",
@@ -7229,7 +7432,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "auto | none | scrollbar | -ms-autohiding-scrollbar"
+				"syntax": "auto | none | scrollbar | -ms-autohiding-scrollbar",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-overflow-style"
 			},
 			{
 				name: "-ms-perspective",
@@ -7281,7 +7485,8 @@ export const data : any = {
 				browsers: "IE5",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scrollbar-3dlight-color"
 			},
 			{
 				name: "-ms-scrollbar-arrow-color",
@@ -7289,7 +7494,8 @@ export const data : any = {
 				browsers: "IE5",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scrollbar-arrow-color"
 			},
 			{
 				name: "-ms-scrollbar-base-color",
@@ -7297,7 +7503,8 @@ export const data : any = {
 				browsers: "IE5",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scrollbar-base-color"
 			},
 			{
 				name: "-ms-scrollbar-darkshadow-color",
@@ -7305,7 +7512,8 @@ export const data : any = {
 				browsers: "IE5",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scrollbar-darkshadow-color"
 			},
 			{
 				name: "-ms-scrollbar-face-color",
@@ -7313,7 +7521,8 @@ export const data : any = {
 				browsers: "IE5",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scrollbar-face-color"
 			},
 			{
 				name: "-ms-scrollbar-highlight-color",
@@ -7321,7 +7530,8 @@ export const data : any = {
 				browsers: "IE5",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scrollbar-highlight-color"
 			},
 			{
 				name: "-ms-scrollbar-shadow-color",
@@ -7329,7 +7539,8 @@ export const data : any = {
 				browsers: "IE5",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scrollbar-shadow-color"
 			},
 			{
 				name: "-ms-scrollbar-track-color",
@@ -7337,7 +7548,8 @@ export const data : any = {
 				browsers: "IE5",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scrollbar-track-color"
 			},
 			{
 				name: "-ms-scroll-chaining",
@@ -7353,7 +7565,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "chained | none"
+				"syntax": "chained | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-chaining"
 			},
 			{
 				name: "-ms-scroll-limit",
@@ -7366,7 +7579,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "<'-ms-scroll-limit-x-min'> <'-ms-scroll-limit-y-min'> <'-ms-scroll-limit-x-max'> <'-ms-scroll-limit-y-max'>"
+				"syntax": "<'-ms-scroll-limit-x-min'> <'-ms-scroll-limit-y-min'> <'-ms-scroll-limit-x-max'> <'-ms-scroll-limit-y-max'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-limit"
 			},
 			{
 				name: "-ms-scroll-limit-x-max",
@@ -7379,7 +7593,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "auto | <length>"
+				"syntax": "auto | <length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-limit-x-max"
 			},
 			{
 				name: "-ms-scroll-limit-x-min",
@@ -7387,7 +7602,8 @@ export const data : any = {
 				browsers: "E,IE10",
 				restriction: "length",
 				"status": "n",
-				"syntax": "<length>"
+				"syntax": "<length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-limit-x-min"
 			},
 			{
 				name: "-ms-scroll-limit-y-max",
@@ -7400,7 +7616,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "auto | <length>"
+				"syntax": "auto | <length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-limit-y-max"
 			},
 			{
 				name: "-ms-scroll-limit-y-min",
@@ -7408,7 +7625,8 @@ export const data : any = {
 				browsers: "E,IE10",
 				restriction: "length",
 				"status": "n",
-				"syntax": "<length>"
+				"syntax": "<length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-limit-y-min"
 			},
 			{
 				name: "-ms-scroll-rails",
@@ -7424,7 +7642,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | railed"
+				"syntax": "none | railed",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-rails"
 			},
 			{
 				name: "-ms-scroll-snap-points-x",
@@ -7440,7 +7659,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "snapInterval( <length-percentage>, <length-percentage> ) | snapList( <length-percentage># )"
+				"syntax": "snapInterval( <length-percentage>, <length-percentage> ) | snapList( <length-percentage># )",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-snap-points-x"
 			},
 			{
 				name: "-ms-scroll-snap-points-y",
@@ -7456,7 +7676,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "snapInterval( <length-percentage>, <length-percentage> ) | snapList( <length-percentage># )"
+				"syntax": "snapInterval( <length-percentage>, <length-percentage> ) | snapList( <length-percentage># )",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-snap-points-y"
 			},
 			{
 				name: "-ms-scroll-snap-type",
@@ -7478,7 +7699,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | proximity | mandatory"
+				"syntax": "none | proximity | mandatory",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-snap-type"
 			},
 			{
 				name: "-ms-scroll-snap-x",
@@ -7503,7 +7725,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "<'-ms-scroll-snap-type'> <'-ms-scroll-snap-points-x'>"
+				"syntax": "<'-ms-scroll-snap-type'> <'-ms-scroll-snap-points-x'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-snap-x"
 			},
 			{
 				name: "-ms-scroll-snap-y",
@@ -7528,7 +7751,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "<'-ms-scroll-snap-type'> <'-ms-scroll-snap-points-y'>"
+				"syntax": "<'-ms-scroll-snap-type'> <'-ms-scroll-snap-points-y'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-snap-y"
 			},
 			{
 				name: "-ms-scroll-translation",
@@ -7544,7 +7768,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | vertical-to-horizontal"
+				"syntax": "none | vertical-to-horizontal",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-scroll-translation"
 			},
 			{
 				name: "-ms-text-align-last",
@@ -7600,7 +7825,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | ideograph-alpha | ideograph-numeric | ideograph-parenthesis | ideograph-space"
+				"syntax": "none | ideograph-alpha | ideograph-numeric | ideograph-parenthesis | ideograph-space",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-text-autospace"
 			},
 			{
 				name: "-ms-text-combine-horizontal",
@@ -7758,7 +7984,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "grippers | none"
+				"syntax": "grippers | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-touch-select"
 			},
 			{
 				name: "-ms-transform",
@@ -7872,7 +8099,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | element | text"
+				"syntax": "none | element | text",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-user-select"
 			},
 			{
 				name: "-ms-word-break",
@@ -7942,7 +8170,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "auto | both | start | end | maximum | clear"
+				"syntax": "auto | both | start | end | maximum | clear",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-wrap-flow"
 			},
 			{
 				name: "-ms-wrap-margin",
@@ -7950,7 +8179,8 @@ export const data : any = {
 				browsers: "E,IE10",
 				restriction: "length, percentage",
 				"status": "n",
-				"syntax": "<length>"
+				"syntax": "<length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-wrap-margin"
 			},
 			{
 				name: "-ms-wrap-through",
@@ -7968,7 +8198,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "wrap | none"
+				"syntax": "wrap | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-wrap-through"
 			},
 			{
 				name: "-ms-writing-mode",
@@ -8284,14 +8515,16 @@ export const data : any = {
 						name: "scale-down"
 					}
 				],
-				"syntax": "fill | contain | cover | none | scale-down"
+				"syntax": "fill | contain | cover | none | scale-down",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/object-fit"
 			},
 			{
 				name: "object-position",
 				desc: "Determines the alignment of the replaced element inside its box.",
 				browsers: "E16,FF36,S10,C31,O19",
 				restriction: "position, length, percentage",
-				"syntax": "<position>"
+				"syntax": "<position>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/object-position"
 			},
 			{
 				name: "-o-border-image",
@@ -8365,21 +8598,24 @@ export const data : any = {
 				desc: "Opacity of an element's text, where 1 is opaque and 0 is entirely transparent.",
 				browsers: "all",
 				restriction: "number(0-1)",
-				"syntax": "<number>"
+				"syntax": "<number>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/opacity"
 			},
 			{
 				name: "order",
 				desc: "Controls the order in which children of a flex container appear within the flex container, by assigning them to ordinal groups.",
 				browsers: "all",
 				restriction: "integer",
-				"syntax": "<integer>"
+				"syntax": "<integer>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/order"
 			},
 			{
 				name: "orphans",
 				desc: "Specifies the minimum number of line boxes in a block container that must be left in a fragment before a fragmentation break.",
 				browsers: "E12,C25,IE8,O9.2",
 				restriction: "integer",
-				"syntax": "<integer>"
+				"syntax": "<integer>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/orphans"
 			},
 			{
 				name: "-o-table-baseline",
@@ -8544,7 +8780,9 @@ export const data : any = {
 						name: "auto",
 						desc: "For non-replaced elements, the effect of this value depends on which of related properties have the value 'auto' as well."
 					}
-				]
+				],
+				"syntax": "<'left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/offset-block-end"
 			},
 			{
 				name: "offset-block-start",
@@ -8556,7 +8794,9 @@ export const data : any = {
 						name: "auto",
 						desc: "For non-replaced elements, the effect of this value depends on which of related properties have the value 'auto' as well."
 					}
-				]
+				],
+				"syntax": "<'left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/offset-block-start"
 			},
 			{
 				name: "offset-inline-end",
@@ -8568,7 +8808,9 @@ export const data : any = {
 						name: "auto",
 						desc: "For non-replaced elements, the effect of this value depends on which of related properties have the value 'auto' as well."
 					}
-				]
+				],
+				"syntax": "<'left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/offset-inline-end"
 			},
 			{
 				name: "offset-inline-start",
@@ -8580,7 +8822,9 @@ export const data : any = {
 						name: "auto",
 						desc: "For non-replaced elements, the effect of this value depends on which of related properties have the value 'auto' as well."
 					}
-				]
+				],
+				"syntax": "<'left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/offset-inline-start"
 			},
 			{
 				name: "outline",
@@ -8597,7 +8841,8 @@ export const data : any = {
 						browsers: "E,IE8,O"
 					}
 				],
-				"syntax": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]"
+				"syntax": "[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/outline"
 			},
 			{
 				name: "outline-color",
@@ -8610,14 +8855,16 @@ export const data : any = {
 						browsers: "E,IE8,O"
 					}
 				],
-				"syntax": "<color> | invert"
+				"syntax": "<color> | invert",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/outline-color"
 			},
 			{
 				name: "outline-offset",
 				desc: "Offset the outline and draw it beyond the border edge.",
 				browsers: "FF1.5,S1.2,C1,O9.5",
 				restriction: "length",
-				"syntax": "<length>"
+				"syntax": "<length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/outline-offset"
 			},
 			{
 				name: "outline-style",
@@ -8630,14 +8877,16 @@ export const data : any = {
 						desc: "Permits the user agent to render a custom outline style, typically the default platform style."
 					}
 				],
-				"syntax": "auto | <'border-style'>"
+				"syntax": "auto | <br-style>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/outline-style"
 			},
 			{
 				name: "outline-width",
 				desc: "Width of the outline.",
 				browsers: "all",
 				restriction: "length, line-width",
-				"syntax": "<line-width>"
+				"syntax": "<br-width>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/outline-width"
 			},
 			{
 				name: "overflow",
@@ -8666,7 +8915,8 @@ export const data : any = {
 						desc: "Content is not clipped, i.e., it may be rendered outside the content box."
 					}
 				],
-				"syntax": "[ visible | hidden | clip | scroll | auto ]{1,2}"
+				"syntax": "[ visible | hidden | clip | scroll | auto ]{1,2}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/overflow"
 			},
 			{
 				name: "overflow-wrap",
@@ -8683,7 +8933,8 @@ export const data : any = {
 						desc: "Lines may break only at allowed break points."
 					}
 				],
-				"syntax": "normal | break-word"
+				"syntax": "normal | break-word",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/overflow-wrap"
 			},
 			{
 				name: "overflow-x",
@@ -8708,7 +8959,8 @@ export const data : any = {
 						desc: "Content is not clipped, i.e., it may be rendered outside the content box."
 					}
 				],
-				"syntax": "visible | hidden | clip | scroll | auto"
+				"syntax": "visible | hidden | clip | scroll | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/overflow-x"
 			},
 			{
 				name: "overflow-y",
@@ -8733,7 +8985,8 @@ export const data : any = {
 						desc: "Content is not clipped, i.e., it may be rendered outside the content box."
 					}
 				],
-				"syntax": "visible | hidden | clip | scroll | auto"
+				"syntax": "visible | hidden | clip | scroll | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/overflow-y"
 			},
 			{
 				name: "pad",
@@ -8748,63 +9001,72 @@ export const data : any = {
 				browsers: "all",
 				restriction: "length, percentage",
 				values: [],
-				"syntax": "[ <length> | <percentage> ]{1,4}"
+				"syntax": "[ <length> | <percentage> ]{1,4}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/padding"
 			},
 			{
 				name: "padding-bottom",
 				desc: "Shorthand property to set values the thickness of the padding area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
 				browsers: "all",
 				restriction: "length, percentage",
-				"syntax": "<length> | <percentage>"
+				"syntax": "<length> | <percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/padding-bottom"
 			},
 			{
 				name: "padding-block-end",
 				desc: "Logical 'padding-bottom'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41,C69,O56",
 				restriction: "length, percentage",
-				"syntax": "<'padding-left'>"
+				"syntax": "<'padding-left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/padding-block-end"
 			},
 			{
 				name: "padding-block-start",
 				desc: "Logical 'padding-top'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41,C69,O56",
 				restriction: "length, percentage",
-				"syntax": "<'padding-left'>"
+				"syntax": "<'padding-left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/padding-block-start"
 			},
 			{
 				name: "padding-inline-end",
 				desc: "Logical 'padding-right'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41,S3,C69,O56",
 				restriction: "length, percentage",
-				"syntax": "<'padding-left'>"
+				"syntax": "<'padding-left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/padding-inline-end"
 			},
 			{
 				name: "padding-inline-start",
 				desc: "Logical 'padding-left'. Mapping depends on the parent element’s 'writing-mode', 'direction', and 'text-orientation'.",
 				browsers: "FF41,S3,C69,O56",
 				restriction: "length, percentage",
-				"syntax": "<'padding-left'>"
+				"syntax": "<'padding-left'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/padding-inline-start"
 			},
 			{
 				name: "padding-left",
 				desc: "Shorthand property to set values the thickness of the padding area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
 				browsers: "all",
 				restriction: "length, percentage",
-				"syntax": "<length> | <percentage>"
+				"syntax": "<length> | <percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/padding-left"
 			},
 			{
 				name: "padding-right",
 				desc: "Shorthand property to set values the thickness of the padding area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
 				browsers: "all",
 				restriction: "length, percentage",
-				"syntax": "<length> | <percentage>"
+				"syntax": "<length> | <percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/padding-right"
 			},
 			{
 				name: "padding-top",
 				desc: "Shorthand property to set values the thickness of the padding area. If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top. The value may not be negative.",
 				browsers: "all",
 				restriction: "length, percentage",
-				"syntax": "<length> | <percentage>"
+				"syntax": "<length> | <percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/padding-top"
 			},
 			{
 				name: "page-break-after",
@@ -8833,7 +9095,8 @@ export const data : any = {
 						desc: "Force one or two page breaks after the generated box so that the next page is formatted as a right page."
 					}
 				],
-				"syntax": "auto | always | avoid | left | right | recto | verso"
+				"syntax": "auto | always | avoid | left | right | recto | verso",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/page-break-after"
 			},
 			{
 				name: "page-break-before",
@@ -8862,7 +9125,8 @@ export const data : any = {
 						desc: "Force one or two page breaks before the generated box so that the next page is formatted as a right page."
 					}
 				],
-				"syntax": "auto | always | avoid | left | right | recto | verso"
+				"syntax": "auto | always | avoid | left | right | recto | verso",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/page-break-before"
 			},
 			{
 				name: "page-break-inside",
@@ -8879,7 +9143,8 @@ export const data : any = {
 						desc: "Avoid a page break inside the generated box."
 					}
 				],
-				"syntax": "auto | avoid"
+				"syntax": "auto | avoid",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/page-break-inside"
 			},
 			{
 				name: "paint-order",
@@ -8902,7 +9167,8 @@ export const data : any = {
 					}
 				],
 				"status": "e",
-				"syntax": "normal | [ fill || stroke || markers ]"
+				"syntax": "normal | [ fill || stroke || markers ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/paint-order"
 			},
 			{
 				name: "perspective",
@@ -8915,14 +9181,16 @@ export const data : any = {
 						desc: "No perspective transform is applied."
 					}
 				],
-				"syntax": "none | <length>"
+				"syntax": "none | <length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/perspective"
 			},
 			{
 				name: "perspective-origin",
 				desc: "Establishes the origin for the perspective property. It effectively sets the X and Y position at which the viewer appears to be looking at the children of the element.",
 				browsers: "all",
 				restriction: "position, percentage, length",
-				"syntax": "<position>"
+				"syntax": "<position>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/perspective-origin"
 			},
 			{
 				name: "pointer-events",
@@ -8963,7 +9231,8 @@ export const data : any = {
 						name: "visibleStroke"
 					}
 				],
-				"syntax": "auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | inherit"
+				"syntax": "auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | inherit",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/pointer-events"
 			},
 			{
 				name: "position",
@@ -8996,7 +9265,8 @@ export const data : any = {
 						browsers: "S6.1"
 					}
 				],
-				"syntax": "static | relative | absolute | sticky | fixed"
+				"syntax": "static | relative | absolute | sticky | fixed",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/position"
 			},
 			{
 				name: "prefix",
@@ -9016,7 +9286,8 @@ export const data : any = {
 						desc: "The 'open-quote' and 'close-quote' values of the 'content' property produce no quotations marks, as if they were 'no-open-quote' and 'no-close-quote' respectively."
 					}
 				],
-				"syntax": "none | [ <string> <string> ]+"
+				"syntax": "none | [ <string> <string> ]+",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/quotes"
 			},
 			{
 				name: "range",
@@ -9058,7 +9329,8 @@ export const data : any = {
 						desc: "The UA presents a unidirectional vertical resizing mechanism to allow the user to adjust only the height of the element."
 					}
 				],
-				"syntax": "none | both | horizontal | vertical | block | inline"
+				"syntax": "none | both | horizontal | vertical",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/resize"
 			},
 			{
 				name: "right",
@@ -9071,7 +9343,8 @@ export const data : any = {
 						desc: "For non-replaced elements, the effect of this value depends on which of related properties have the value 'auto' as well"
 					}
 				],
-				"syntax": "<length> | <percentage> | auto"
+				"syntax": "<length> | <percentage> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/right"
 			},
 			{
 				name: "ruby-align",
@@ -9126,7 +9399,8 @@ export const data : any = {
 					}
 				],
 				"status": "e",
-				"syntax": "start | center | space-between | space-around"
+				"syntax": "start | center | space-between | space-around",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/ruby-align"
 			},
 			{
 				name: "ruby-overhang",
@@ -9173,7 +9447,8 @@ export const data : any = {
 					}
 				],
 				"status": "e",
-				"syntax": "over | under | inter-character"
+				"syntax": "over | under | inter-character",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/ruby-position"
 			},
 			{
 				name: "ruby-span",
@@ -9252,7 +9527,8 @@ export const data : any = {
 						name: "smooth"
 					}
 				],
-				"syntax": "auto | smooth"
+				"syntax": "auto | smooth",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/scroll-behavior"
 			},
 			{
 				name: "scroll-snap-coordinate",
@@ -9266,7 +9542,8 @@ export const data : any = {
 					}
 				],
 				"status": "o",
-				"syntax": "none | <position>#"
+				"syntax": "none | <position>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/scroll-snap-coordinate"
 			},
 			{
 				name: "scroll-snap-destination",
@@ -9274,7 +9551,8 @@ export const data : any = {
 				browsers: "FF39",
 				restriction: "position, length, percentage",
 				"status": "o",
-				"syntax": "<position>"
+				"syntax": "<position>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/scroll-snap-destination"
 			},
 			{
 				name: "scroll-snap-points-x",
@@ -9292,7 +9570,8 @@ export const data : any = {
 					}
 				],
 				"status": "o",
-				"syntax": "none | repeat( <length-percentage> )"
+				"syntax": "none | repeat( <length-percentage> )",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/scroll-snap-points-x"
 			},
 			{
 				name: "scroll-snap-points-y",
@@ -9310,7 +9589,8 @@ export const data : any = {
 					}
 				],
 				"status": "o",
-				"syntax": "none | repeat( <length-percentage> )"
+				"syntax": "none | repeat( <length-percentage> )",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/scroll-snap-points-y"
 			},
 			{
 				name: "scroll-snap-type",
@@ -9331,21 +9611,24 @@ export const data : any = {
 						desc: "The visual viewport of this scroll container may come to rest on a snap point at the termination of a scroll at the discretion of the UA given the parameters of the scroll."
 					}
 				],
-				"syntax": "none | mandatory | proximity"
+				"syntax": "none | mandatory | proximity",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/scroll-snap-type"
 			},
 			{
 				name: "shape-image-threshold",
 				desc: "Defines the alpha channel threshold used to extract the shape using an image. A value of 0.5 means that the shape will enclose all the pixels that are more than 50% opaque.",
 				browsers: "FF62,S10.1,C37,O24",
 				restriction: "number",
-				"syntax": "<number>"
+				"syntax": "<number>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/shape-image-threshold"
 			},
 			{
 				name: "shape-margin",
 				desc: "Adds a margin to a 'shape-outside'. This defines a new shape that is the smallest contour that includes all the points that are the 'shape-margin' distance outward in the perpendicular direction from a point on the underlying shape.",
 				browsers: "FF62,S10.1,C37,O24",
 				restriction: "url, length, percentage",
-				"syntax": "<length-percentage>"
+				"syntax": "<length-percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/shape-margin"
 			},
 			{
 				name: "shape-outside",
@@ -9361,7 +9644,8 @@ export const data : any = {
 						desc: "The float area is unaffected."
 					}
 				],
-				"syntax": "none | <shape-box> || <basic-shape> | <image>"
+				"syntax": "none | <shape-box> || <basic-shape> | <image>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/shape-outside"
 			},
 			{
 				name: "shape-rendering",
@@ -9560,14 +9844,16 @@ export const data : any = {
 						desc: "Use the fixed table layout algorithm."
 					}
 				],
-				"syntax": "auto | fixed"
+				"syntax": "auto | fixed",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/table-layout"
 			},
 			{
 				name: "tab-size",
 				desc: "Determines the width of the tab character (U+0009), in space characters (U+0020), when rendered.",
 				browsers: "FF4,S6.1,C21,O15",
 				restriction: "integer, length",
-				"syntax": "<integer> | <length>"
+				"syntax": "<integer> | <length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/tab-size"
 			},
 			{
 				name: "text-align",
@@ -9602,7 +9888,8 @@ export const data : any = {
 						browsers: "C,FF1,O15,S3.1"
 					}
 				],
-				"syntax": "start | end | left | right | center | justify | match-parent"
+				"syntax": "start | end | left | right | center | justify | match-parent",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-align"
 			},
 			{
 				name: "text-align-last",
@@ -9631,7 +9918,8 @@ export const data : any = {
 						desc: "The inline contents are aligned to the right edge of the line box. In vertical text, 'right' aligns to the edge of the line box that would be the end edge for left-to-right text."
 					}
 				],
-				"syntax": "auto | start | end | left | right | center | justify"
+				"syntax": "auto | start | end | left | right | center | justify",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-align-last"
 			},
 			{
 				name: "text-anchor",
@@ -9687,14 +9975,16 @@ export const data : any = {
 						name: "wavy"
 					}
 				],
-				"syntax": "<'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'>"
+				"syntax": "<'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-decoration"
 			},
 			{
 				name: "text-decoration-color",
 				desc: "Specifies the color of text decoration (underlines overlines, and line-throughs) set on the element with text-decoration-line.",
 				browsers: "FF36,S,C57,O44",
 				restriction: "color",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-decoration-color"
 			},
 			{
 				name: "text-decoration-line",
@@ -9716,7 +10006,8 @@ export const data : any = {
 						name: "underline"
 					}
 				],
-				"syntax": "none | [ underline || overline || line-through || blink ]"
+				"syntax": "none | [ underline || overline || line-through || blink ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-decoration-line"
 			},
 			{
 				name: "text-decoration-style",
@@ -9744,7 +10035,8 @@ export const data : any = {
 						name: "wavy"
 					}
 				],
-				"syntax": "solid | double | dotted | dashed | wavy"
+				"syntax": "solid | double | dotted | dashed | wavy",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-decoration-style"
 			},
 			{
 				name: "text-indent",
@@ -9752,7 +10044,8 @@ export const data : any = {
 				browsers: "all",
 				restriction: "percentage, length",
 				values: [],
-				"syntax": "<length-percentage> && hanging? && each-line?"
+				"syntax": "<length-percentage> && hanging? && each-line?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-indent"
 			},
 			{
 				name: "text-justify",
@@ -9787,7 +10080,8 @@ export const data : any = {
 						name: "newspaper"
 					}
 				],
-				"syntax": "auto | inter-character | inter-word | none"
+				"syntax": "auto | inter-character | inter-word | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-justify"
 			},
 			{
 				name: "text-orientation",
@@ -9807,7 +10101,8 @@ export const data : any = {
 						name: "upright"
 					}
 				],
-				"syntax": "mixed | upright | sideways"
+				"syntax": "mixed | upright | sideways",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-orientation"
 			},
 			{
 				name: "text-overflow",
@@ -9822,7 +10117,8 @@ export const data : any = {
 						name: "ellipsis"
 					}
 				],
-				"syntax": "[ clip | ellipsis | <string> ]{1,2}"
+				"syntax": "[ clip | ellipsis | <string> ]{1,2}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-overflow"
 			},
 			{
 				name: "text-rendering",
@@ -9845,7 +10141,8 @@ export const data : any = {
 						desc: "Indicates that the user agent shall emphasize rendering speed over legibility and geometric precision."
 					}
 				],
-				"syntax": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision"
+				"syntax": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-rendering"
 			},
 			{
 				name: "text-shadow",
@@ -9858,7 +10155,8 @@ export const data : any = {
 						desc: "No shadow."
 					}
 				],
-				"syntax": "none | <shadow-t>#"
+				"syntax": "none | <shadow-t>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-shadow"
 			},
 			{
 				name: "text-transform",
@@ -9880,7 +10178,8 @@ export const data : any = {
 						name: "uppercase"
 					}
 				],
-				"syntax": "none | capitalize | uppercase | lowercase | full-width"
+				"syntax": "none | capitalize | uppercase | lowercase | full-width",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-transform"
 			},
 			{
 				name: "text-underline-position",
@@ -9900,7 +10199,8 @@ export const data : any = {
 						desc: "The underline is aligned with the under edge of the element’s content box."
 					}
 				],
-				"syntax": "auto | [ under || [ left | right ] ]"
+				"syntax": "auto | [ under || [ left | right ] ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-underline-position"
 			},
 			{
 				name: "top",
@@ -9913,7 +10213,8 @@ export const data : any = {
 						desc: "For non-replaced elements, the effect of this value depends on which of related properties have the value 'auto' as well"
 					}
 				],
-				"syntax": "<length> | <percentage> | auto"
+				"syntax": "<length> | <percentage> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/top"
 			},
 			{
 				name: "touch-action",
@@ -9958,7 +10259,8 @@ export const data : any = {
 						browsers: "E,IE11"
 					}
 				],
-				"syntax": "auto | none | [ [ pan-x | pan-left | pan-right ] || [ pan-y | pan-up | pan-down ] || pinch-zoom ] | manipulation"
+				"syntax": "auto | none | [ [ pan-x | pan-left | pan-right ] || [ pan-y | pan-up | pan-down ] || pinch-zoom ] | manipulation",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/touch-action"
 			},
 			{
 				name: "transform",
@@ -10033,14 +10335,16 @@ export const data : any = {
 						name: "translateZ()"
 					}
 				],
-				"syntax": "none | <transform-list>"
+				"syntax": "none | <transform-list>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transform"
 			},
 			{
 				name: "transform-origin",
 				desc: "Establishes the origin of transformation for an element.",
 				browsers: "all",
 				restriction: "position, length, percentage",
-				"syntax": "[ <length-percentage> | left | center | right | top | bottom ] | [ [ <length-percentage> | left | center | right ] && [ <length-percentage> | top | center | bottom ] ] <length>?"
+				"syntax": "[ <length-percentage> | left | center | right | top | bottom ] | [ [ <length-percentage> | left | center | right ] && [ <length-percentage> | top | center | bottom ] ] <length>?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transform-origin"
 			},
 			{
 				name: "transform-style",
@@ -10056,7 +10360,8 @@ export const data : any = {
 						browsers: "E,C36,FF16,O23,S9"
 					}
 				],
-				"syntax": "flat | preserve-3d"
+				"syntax": "flat | preserve-3d",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transform-style"
 			},
 			{
 				name: "transition",
@@ -10073,21 +10378,24 @@ export const data : any = {
 						desc: "No property will transition."
 					}
 				],
-				"syntax": "<single-transition>#"
+				"syntax": "<single-transition>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transition"
 			},
 			{
 				name: "transition-delay",
 				desc: "Defines when the transition will start. It allows a transition to begin execution some period of time from when it is applied.",
 				browsers: "all",
 				restriction: "time",
-				"syntax": "<time>#"
+				"syntax": "<time>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transition-delay"
 			},
 			{
 				name: "transition-duration",
 				desc: "Specifies how long the transition from the old value to the new value should take.",
 				browsers: "all",
 				restriction: "time",
-				"syntax": "<time>#"
+				"syntax": "<time>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transition-duration"
 			},
 			{
 				name: "transition-property",
@@ -10104,14 +10412,16 @@ export const data : any = {
 						desc: "No property will transition."
 					}
 				],
-				"syntax": "none | <single-transition-property>#"
+				"syntax": "none | <single-transition-property>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transition-property"
 			},
 			{
 				name: "transition-timing-function",
 				desc: "Describes how the intermediate values used during a transition will be calculated.",
 				browsers: "all",
 				restriction: "timing-function",
-				"syntax": "<single-transition-timing-function>#"
+				"syntax": "<single-transition-timing-function>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transition-timing-function"
 			},
 			{
 				name: "unicode-bidi",
@@ -10143,7 +10453,8 @@ export const data : any = {
 						browsers: "C,FF10,O15,S6"
 					}
 				],
-				"syntax": "normal | embed | isolate | bidi-override | isolate-override | plaintext"
+				"syntax": "normal | embed | isolate | bidi-override | isolate-override | plaintext",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/unicode-bidi"
 			},
 			{
 				name: "unicode-range",
@@ -10411,7 +10722,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "auto | text | none | contain | all"
+				"syntax": "auto | text | none | contain | all",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/user-select"
 			},
 			{
 				name: "vertical-align",
@@ -10458,7 +10770,8 @@ export const data : any = {
 						browsers: "C,S1"
 					}
 				],
-				"syntax": "baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>"
+				"syntax": "baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/vertical-align"
 			},
 			{
 				name: "visibility",
@@ -10479,7 +10792,8 @@ export const data : any = {
 						desc: "The generated box is visible."
 					}
 				],
-				"syntax": "visible | hidden | collapse"
+				"syntax": "visible | hidden | collapse",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/visibility"
 			},
 			{
 				name: "-webkit-animation",
@@ -10761,7 +11075,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "none | button | button-bevel | caret | checkbox | default-button | inner-spin-button | listbox | listitem | media-controls-background | media-controls-fullscreen-background | media-current-time-display | media-enter-fullscreen-button | media-exit-fullscreen-button | media-fullscreen-button | media-mute-button | media-overlay-play-button | media-play-button | media-seek-back-button | media-seek-forward-button | media-slider | media-sliderthumb | media-time-remaining-display | media-toggle-closed-captions-button | media-volume-slider | media-volume-slider-container | media-volume-sliderthumb | menulist | menulist-button | menulist-text | menulist-textfield | meter | progress-bar | progress-bar-value | push-button | radio | searchfield | searchfield-cancel-button | searchfield-decoration | searchfield-results-button | searchfield-results-decoration | slider-horizontal | slider-vertical | sliderthumb-horizontal | sliderthumb-vertical | square-button | textarea | textfield"
+				"syntax": "none | button | button-bevel | caret | checkbox | default-button | inner-spin-button | listbox | listitem | media-controls-background | media-controls-fullscreen-background | media-current-time-display | media-enter-fullscreen-button | media-exit-fullscreen-button | media-fullscreen-button | media-mute-button | media-overlay-play-button | media-play-button | media-seek-back-button | media-seek-forward-button | media-slider | media-sliderthumb | media-time-remaining-display | media-toggle-closed-captions-button | media-volume-slider | media-volume-slider-container | media-volume-sliderthumb | menulist | menulist-button | menulist-text | menulist-textfield | meter | progress-bar | progress-bar-value | push-button | radio | searchfield | searchfield-cancel-button | searchfield-decoration | searchfield-results-button | searchfield-results-decoration | slider-horizontal | slider-vertical | sliderthumb-horizontal | sliderthumb-vertical | square-button | textarea | textfield",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-appearance"
 			},
 			{
 				name: "-webkit-backdrop-filter",
@@ -11016,7 +11331,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "[ above | below | right | left ]? <length>? <image>?"
+				"syntax": "[ above | below | right | left ]? <length>? <image>?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-box-reflect"
 			},
 			{
 				name: "-webkit-box-sizing",
@@ -11585,7 +11901,8 @@ export const data : any = {
 				browsers: "C,O15,S4",
 				restriction: "box",
 				"status": "n",
-				"syntax": "[ <box> | border | padding | content | text ]#"
+				"syntax": "[ <box> | border | padding | content | text ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-clip"
 			},
 			{
 				name: "-webkit-mask-image",
@@ -11603,7 +11920,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "<mask-reference>#"
+				"syntax": "<mask-reference>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-image"
 			},
 			{
 				name: "-webkit-mask-origin",
@@ -11611,7 +11929,8 @@ export const data : any = {
 				browsers: "C,O15,S4",
 				restriction: "box",
 				"status": "n",
-				"syntax": "[ <box> | border | padding | content ]#"
+				"syntax": "[ <box> | border | padding | content ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-origin"
 			},
 			{
 				name: "-webkit-mask-repeat",
@@ -11619,7 +11938,8 @@ export const data : any = {
 				browsers: "C,O15,S4",
 				restriction: "repeat",
 				"status": "n",
-				"syntax": "<repeat-style>#"
+				"syntax": "<repeat-style>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-repeat"
 			},
 			{
 				name: "-webkit-mask-size",
@@ -11641,7 +11961,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "<bg-size>#"
+				"syntax": "<bg-size>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-size"
 			},
 			{
 				name: "-webkit-nbsp-mode",
@@ -11669,7 +11990,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "auto | touch"
+				"syntax": "auto | touch",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-overflow-scrolling"
 			},
 			{
 				name: "-webkit-padding-start",
@@ -11714,14 +12036,16 @@ export const data : any = {
 				browsers: "E,C,S3.1",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-tap-highlight-color"
 			},
 			{
 				name: "-webkit-text-fill-color",
 				browsers: "E12,FF49,S,C,O",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-text-fill-color"
 			},
 			{
 				name: "-webkit-text-size-adjust",
@@ -11744,21 +12068,24 @@ export const data : any = {
 				browsers: "E15,FF49,S3.1,C4,O15",
 				restriction: "length, line-width, color, percentage",
 				"status": "n",
-				"syntax": "<length> || <color>"
+				"syntax": "<length> || <color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-text-stroke"
 			},
 			{
 				name: "-webkit-text-stroke-color",
 				browsers: "E15,FF49,S,C,O",
 				restriction: "color",
 				"status": "n",
-				"syntax": "<color>"
+				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-text-stroke-color"
 			},
 			{
 				name: "-webkit-text-stroke-width",
 				browsers: "E15,FF49,S,C,O",
 				restriction: "length, line-width, percentage",
 				"status": "n",
-				"syntax": "<length>"
+				"syntax": "<length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-text-stroke-width"
 			},
 			{
 				name: "-webkit-touch-callout",
@@ -11770,7 +12097,8 @@ export const data : any = {
 					}
 				],
 				"status": "n",
-				"syntax": "default | none"
+				"syntax": "default | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-touch-callout"
 			},
 			{
 				name: "-webkit-transform",
@@ -12007,14 +12335,16 @@ export const data : any = {
 						name: "pre-wrap"
 					}
 				],
-				"syntax": "normal | pre | nowrap | pre-wrap | pre-line"
+				"syntax": "normal | pre | nowrap | pre-wrap | pre-line",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/white-space"
 			},
 			{
 				name: "widows",
 				desc: "Specifies the minimum number of line boxes of a block container that must be left in a fragment after a break.",
 				browsers: "E12,C25,IE8,O9.2",
 				restriction: "integer",
-				"syntax": "<integer>"
+				"syntax": "<integer>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/widows"
 			},
 			{
 				name: "width",
@@ -12061,7 +12391,8 @@ export const data : any = {
 						name: "scroll-position"
 					}
 				],
-				"syntax": "auto | <animateable-feature>#"
+				"syntax": "auto | <animateable-feature>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/will-change"
 			},
 			{
 				name: "word-break",
@@ -12081,7 +12412,8 @@ export const data : any = {
 						desc: "Breaks non-CJK scripts according to their own rules."
 					}
 				],
-				"syntax": "normal | break-all | keep-all | break-word"
+				"syntax": "normal | break-all | keep-all | break-word",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/word-break"
 			},
 			{
 				name: "word-spacing",
@@ -12094,7 +12426,8 @@ export const data : any = {
 						desc: "No additional spacing is applied. Computes to zero."
 					}
 				],
-				"syntax": "normal | <length-percentage>"
+				"syntax": "normal | <length-percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/word-spacing"
 			},
 			{
 				name: "word-wrap",
@@ -12111,7 +12444,8 @@ export const data : any = {
 						desc: "Lines may break only at allowed break points."
 					}
 				],
-				"syntax": "normal | break-word"
+				"syntax": "normal | break-word",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/overflow-wrap"
 			},
 			{
 				name: "writing-mode",
@@ -12137,7 +12471,8 @@ export const data : any = {
 						name: "vertical-rl"
 					}
 				],
-				"syntax": "horizontal-tb | vertical-rl | vertical-lr | sideways-rl | sideways-lr"
+				"syntax": "horizontal-tb | vertical-rl | vertical-lr | sideways-rl | sideways-lr",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/writing-mode"
 			},
 			{
 				name: "z-index",
@@ -12150,7 +12485,8 @@ export const data : any = {
 						desc: "The stack level of the generated box in the current stacking context is 0. The box does not establish a new stacking context unless it is the root element."
 					}
 				],
-				"syntax": "auto | <integer>"
+				"syntax": "auto | <integer>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/z-index"
 			},
 			{
 				name: "zoom",
@@ -12169,14 +12505,16 @@ export const data : any = {
 				desc: "Aligns the Input Method Editor (IME) candidate window box relative to the element on which the IME composition is active.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "auto | after"
+				"syntax": "auto | after",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-ms-ime-align"
 			},
 			{
 				name: "-moz-binding",
 				desc: "The -moz-binding CSS property is used by Mozilla-based applications to attach an XBL binding to a DOM element.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<url> | none"
+				"syntax": "<url> | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-binding"
 			},
 			{
 				name: "-moz-context-properties",
@@ -12184,6 +12522,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "none | [ fill | fill-opacity | stroke | stroke-opacity ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-context-properties",
 				browsers: "FF55"
 			},
 			{
@@ -12191,112 +12530,128 @@ export const data : any = {
 				desc: "The non-standard -moz-float-edge CSS property specifies whether the height and width properties of the element include the margin, border, or padding thickness.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "border-box | content-box | margin-box | padding-box"
+				"syntax": "border-box | content-box | margin-box | padding-box",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-float-edge"
 			},
 			{
 				name: "-moz-force-broken-image-icon",
 				desc: "The -moz-force-broken-image-icon extended CSS property can be used to force the broken image icon to be shown even when a broken image has an alt attribute.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<integer>"
+				"syntax": "<integer>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-force-broken-image-icon"
 			},
 			{
 				name: "-moz-image-region",
 				desc: "For certain XUL elements and pseudo-elements that use an image from the list-style-image property, this property specifies a region of the image that is used in place of the whole image. This allows elements to use different pieces of the same image to improve performance.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<shape> | auto"
+				"syntax": "<shape> | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-image-region"
 			},
 			{
 				name: "-moz-orient",
 				desc: "The -moz-orient CSS property specifies the orientation of the element to which it's applied.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "inline | block | horizontal | vertical"
+				"syntax": "inline | block | horizontal | vertical",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-orient"
 			},
 			{
 				name: "-moz-outline-radius",
 				desc: "In Mozilla applications like Firefox, the -moz-outline-radius CSS property can be used to give an element's outline rounded corners.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<outline-radius>{1,4} [ / <outline-radius>{1,4} ]?"
+				"syntax": "<outline-radius>{1,4} [ / <outline-radius>{1,4} ]?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-outline-radius"
 			},
 			{
 				name: "-moz-outline-radius-bottomleft",
 				desc: "In Mozilla applications, the -moz-outline-radius-bottomleft CSS property can be used to round the bottom-left corner of an element's outline.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<outline-radius>"
+				"syntax": "<outline-radius>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-outline-radius-bottomleft"
 			},
 			{
 				name: "-moz-outline-radius-bottomright",
 				desc: "In Mozilla applications, the -moz-outline-radius-bottomright CSS property can be used to round the bottom-right corner of an element's outline.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<outline-radius>"
+				"syntax": "<outline-radius>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-outline-radius-bottomright"
 			},
 			{
 				name: "-moz-outline-radius-topleft",
 				desc: "In Mozilla applications, the -moz-outline-radius-topleft CSS property can be used to round the top-left corner of an element's outline.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<outline-radius>"
+				"syntax": "<outline-radius>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-outline-radius-topleft"
 			},
 			{
 				name: "-moz-outline-radius-topright",
 				desc: "In Mozilla applications, the -moz-outline-radius-topright CSS property can be used to round the top-right corner of an element's outline.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<outline-radius>"
+				"syntax": "<outline-radius>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-outline-radius-topright"
 			},
 			{
 				name: "-moz-stack-sizing",
 				desc: "-moz-stack-sizing is an extended CSS property. Normally, a stack will change its size so that all of its child elements are completely visible. For example, moving a child of the stack far to the right will widen the stack so the child remains visible.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "ignore | stretch-to-fit"
+				"syntax": "ignore | stretch-to-fit",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-stack-sizing"
 			},
 			{
 				name: "-moz-text-blink",
 				desc: "The -moz-text-blink non-standard Mozilla CSS extension specifies the blink mode.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "none | blink"
+				"syntax": "none | blink",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-text-blink"
 			},
 			{
 				name: "-moz-user-input",
 				desc: "In Mozilla applications, -moz-user-input determines if an element will accept user input.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "auto | none | enabled | disabled"
+				"syntax": "auto | none | enabled | disabled",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-user-input"
 			},
 			{
 				name: "-moz-user-modify",
 				desc: "The -moz-user-modify property has no effect. It was originally planned to determine whether or not the content of an element can be edited by a user.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "read-only | read-write | write-only"
+				"syntax": "read-only | read-write | write-only",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-user-modify"
 			},
 			{
 				name: "-moz-window-dragging",
 				desc: "The -moz-window-dragging CSS property specifies whether a window is draggable or not. It only works in Chrome code, and only on Mac OS X.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "drag | no-drag"
+				"syntax": "drag | no-drag",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-window-dragging"
 			},
 			{
 				name: "-moz-window-shadow",
 				desc: "The -moz-window-shadow CSS property specifies whether a window will have a shadow. It only works on Mac OS X.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "default | menu | tooltip | sheet | none"
+				"syntax": "default | menu | tooltip | sheet | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-window-shadow"
 			},
 			{
 				name: "-webkit-border-before",
 				desc: "The -webkit-border-before CSS property is a shorthand property for setting the individual logical block start border property values in a single place in the style sheet.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<'border-width'> || <'border-style'> || <'color'>"
+				"syntax": "<'border-width'> || <'border-style'> || <'color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-border-before"
 			},
 			{
 				name: "-webkit-border-before-color",
@@ -12324,7 +12679,8 @@ export const data : any = {
 				desc: "The mask CSS property alters the visibility of an element by either partially or fully hiding it. This is accomplished by either masking or clipping the image at specific points.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "[ <mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || [ <box> | border | padding | content | text ] || [ <box> | border | padding | content ] ]#"
+				"syntax": "[ <mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || [ <box> | border | padding | content | text ] || [ <box> | border | padding | content ] ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask"
 			},
 			{
 				name: "-webkit-mask-attachment",
@@ -12332,6 +12688,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "<attachment>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-attachment",
 				browsers: "S4,C"
 			},
 			{
@@ -12339,21 +12696,24 @@ export const data : any = {
 				desc: "The -webkit-mask-composite property specifies the manner in which multiple mask images applied to the same element are composited with one another. Mask images are composited in the opposite order that they are declared with the -webkit-mask-image property.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<composite-style>#"
+				"syntax": "<composite-style>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-composite"
 			},
 			{
 				name: "-webkit-mask-position",
 				desc: "The mask-position CSS property sets the initial position, relative to the mask position layer defined by mask-origin, for each defined mask image.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "<position>#"
+				"syntax": "<position>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-position"
 			},
 			{
 				name: "-webkit-mask-position-x",
 				desc: "The -webkit-mask-position-x CSS property sets the initial horizontal position of a mask image.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "[ <length-percentage> | left | center | right ]#"
+				"syntax": "[ <length-percentage> | left | center | right ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-position-x"
 			},
 			{
 				name: "-webkit-mask-position-y",
@@ -12361,6 +12721,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "[ <length-percentage> | top | center | bottom ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-position-y",
 				browsers: "S4,C1"
 			},
 			{
@@ -12368,14 +12729,16 @@ export const data : any = {
 				desc: "The -webkit-mask-repeat-x property specifies whether and how a mask image is repeated (tiled) horizontally.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "repeat | no-repeat | space | round"
+				"syntax": "repeat | no-repeat | space | round",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-repeat-x"
 			},
 			{
 				name: "-webkit-mask-repeat-y",
 				desc: "The -webkit-mask-repeat-y property specifies whether and how a mask image is repeated (tiled) vertically.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "repeat | no-repeat | space | round"
+				"syntax": "repeat | no-repeat | space | round",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-repeat-y"
 			},
 			{
 				name: "appearance",
@@ -12383,6 +12746,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "auto | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/-moz-appearance",
 				browsers: "E12,FF1,S3,C1,O15"
 			},
 			{
@@ -12390,7 +12754,8 @@ export const data : any = {
 				desc: "In combination with elevation, the azimuth CSS property enables different audio sources to be positioned spatially for aural presentation. This is important in that it provides a natural way to tell several voices apart, as each can be positioned to originate at a different location on the sound stage. Stereo output produce a lateral sound stage, while binaural headphones and multi-speaker setups allow for a fully three-dimensional stage.",
 				restriction: "none",
 				"status": "o",
-				"syntax": "<angle> | [ [ left-side | far-left | left | center-left | center | center-right | right | far-right | right-side ] || behind ] | leftwards | rightwards"
+				"syntax": "<angle> | [ [ left-side | far-left | left | center-left | center | center-right | right | far-right | right-side ] || behind ] | leftwards | rightwards",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/azimuth"
 			},
 			{
 				name: "backdrop-filter",
@@ -12398,6 +12763,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "none | <filter-function-list>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/backdrop-filter",
 				browsers: "E17,S9,C47,O34"
 			},
 			{
@@ -12406,6 +12772,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "start | center | end | baseline | stretch",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-align",
 				browsers: "E,FF49,S3,C,O"
 			},
 			{
@@ -12414,6 +12781,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "normal | reverse | inherit",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-direction",
 				browsers: "E12,FF,S3,C,O"
 			},
 			{
@@ -12422,6 +12790,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "<number>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-flex",
 				browsers: "E12,FF,S3,C,O"
 			},
 			{
@@ -12430,6 +12799,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "<integer>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-flex-group",
 				browsers: "S3,C,O"
 			},
 			{
@@ -12438,6 +12808,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "single | multiple",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-lines",
 				browsers: "S3,C,O"
 			},
 			{
@@ -12446,6 +12817,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "<integer>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-ordinal-group",
 				browsers: "E,FF,S3,C,O"
 			},
 			{
@@ -12454,6 +12826,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "horizontal | vertical | inline-axis | block-axis | inherit",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-orient",
 				browsers: "E12,FF,S3,C,O"
 			},
 			{
@@ -12462,6 +12835,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "start | center | end | justify",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/box-pack",
 				browsers: "E12,FF,S3,C,O"
 			},
 			{
@@ -12469,6 +12843,7 @@ export const data : any = {
 				desc: "The color-adjust property is a non-standard CSS extension that can be used to force printing of background colors and images in browsers based on the WebKit engine.",
 				restriction: "none",
 				"syntax": "economy | exact",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/color-adjust",
 				browsers: "FF48,S6,C49,O15"
 			},
 			{
@@ -12476,6 +12851,7 @@ export const data : any = {
 				desc: "The font-optical-sizing CSS property allows developers to control whether browsers render text with slightly differing visual representations to optimize viewing at different sizes, or not. This only works for fonts that have an optical size variation axis.",
 				restriction: "none",
 				"syntax": "auto | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/font-optical-sizing",
 				browsers: "FF62"
 			},
 			{
@@ -12490,13 +12866,15 @@ export const data : any = {
 				desc: "The gap CSS property is a shorthand property for row-gap and column-gap specifying the gutters between grid rows and columns.",
 				restriction: "none",
 				"syntax": "<'row-gap'> <'column-gap'>?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/gap",
 				browsers: "E16,FF63,S10.1,C66,O53"
 			},
 			{
 				name: "hanging-punctuation",
 				desc: "The hanging-punctuation CSS property specifies whether a punctuation mark should hang at the start or end of a line of text. Hanging punctuation may be placed outside the line box.",
 				restriction: "none",
-				"syntax": "none | [ first || [ force-end | allow-end ] || last ]"
+				"syntax": "none | [ first || [ force-end | allow-end ] || last ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/hanging-punctuation"
 			},
 			{
 				name: "image-resolution",
@@ -12511,6 +12889,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "normal | [ <number> <integer>? ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/initial-letter",
 				browsers: "S9"
 			},
 			{
@@ -12518,35 +12897,8 @@ export const data : any = {
 				desc: "The initial-letter-align CSS property specifies the alignment of initial letters within a paragraph.",
 				restriction: "none",
 				"status": "e",
-				"syntax": "[ auto | alphabetic | hanging | ideographic ]"
-			},
-			{
-				name: "inset-block-end",
-				desc: "The inset-block-end CSS property defines the logical block end offset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the top, right, bottom, or left property depending on the values defined for writing-mode, direction, and text-orientation.",
-				restriction: "none",
-				"syntax": "<'left'>",
-				browsers: "FF63"
-			},
-			{
-				name: "inset-block-start",
-				desc: "The inset-block-start CSS property defines the logical block start offset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the top, right, bottom, or left property depending on the values defined for writing-mode, direction, and text-orientation.",
-				restriction: "none",
-				"syntax": "<'left'>",
-				browsers: "FF63"
-			},
-			{
-				name: "inset-inline-end",
-				desc: "The inset-inline-end CSS property defines the logical inline end inset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the top, right, bottom, or left property depending on the values defined for writing-mode, direction, and text-orientation.",
-				restriction: "none",
-				"syntax": "<'left'>",
-				browsers: "FF63"
-			},
-			{
-				name: "inset-inline-start",
-				desc: "The inset-inline-start CSS property defines the logical inline start inset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the top, right, bottom, or left property depending on the values defined for writing-mode, direction, and text-orientation.",
-				restriction: "none",
-				"syntax": "<'left'>",
-				browsers: "FF63"
+				"syntax": "[ auto | alphabetic | hanging | ideographic ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/initial-letter-align"
 			},
 			{
 				name: "line-clamp",
@@ -12556,10 +12908,20 @@ export const data : any = {
 				"syntax": "none | <integer>"
 			},
 			{
+				name: "line-height-step",
+				desc: "The line-height-step CSS property defines the step units for line box heights. When the step unit is positive, line box heights are rounded up to the closest multiple of the unit. Negative values are invalid.",
+				restriction: "none",
+				"status": "e",
+				"syntax": "<length>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/line-height-step",
+				browsers: "C60,O47"
+			},
+			{
 				name: "mask",
 				desc: "The mask CSS property alters the visibility of an element by either partially or fully hiding it. This is accomplished by either masking or clipping the image at specific points.",
 				restriction: "none",
 				"syntax": "<mask-layer>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask",
 				browsers: "E12,FF,S4,C1,O"
 			},
 			{
@@ -12567,55 +12929,63 @@ export const data : any = {
 				desc: "The mask-border CSS property lets you create a mask along the edge of an element's border.\n\nThis property is a shorthand for mask-border-source, mask-border-slice, mask-border-width, mask-border-outset, mask-border-repeat, and mask-border-mode. As with all shorthand properties, any omitted sub-values will be set to their initial value.",
 				restriction: "none",
 				"status": "e",
-				"syntax": "<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>"
+				"syntax": "<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-border"
 			},
 			{
 				name: "mask-border-mode",
 				desc: "The mask-border-mode CSS property specifies the blending mode used in a mask border.",
 				restriction: "none",
 				"status": "e",
-				"syntax": "luminance | alpha"
+				"syntax": "luminance | alpha",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-border-mode"
 			},
 			{
 				name: "mask-border-outset",
 				desc: "The mask-border-outset CSS property specifies the distance by which an element's mask border is set out from its border box.",
 				restriction: "none",
 				"status": "e",
-				"syntax": "[ <length> | <number> ]{1,4}"
+				"syntax": "[ <length> | <number> ]{1,4}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-border-outset"
 			},
 			{
 				name: "mask-border-repeat",
 				desc: "The mask-border-repeat CSS property defines how the edge regions of a source image are adjusted to fit the dimensions of an element's mask border.",
 				restriction: "none",
 				"status": "e",
-				"syntax": "[ stretch | repeat | round | space ]{1,2}"
+				"syntax": "[ stretch | repeat | round | space ]{1,2}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-border-repeat"
 			},
 			{
 				name: "mask-border-slice",
 				desc: "The mask-border-slice CSS property divides the image specified by mask-border-source into regions. These regions are used to form the components of an element's mask border.",
 				restriction: "none",
 				"status": "e",
-				"syntax": "<number-percentage>{1,4} fill?"
+				"syntax": "<number-percentage>{1,4} fill?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-border-slice"
 			},
 			{
 				name: "mask-border-source",
 				desc: "The mask-border-source CSS property specifies the source image used to create an element's mask border.\n\nThe mask-border-slice property is used to divide the source image into regions, which are then dynamically applied to the final mask border.",
 				restriction: "none",
 				"status": "e",
-				"syntax": "none | <image>"
+				"syntax": "none | <image>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-border-source"
 			},
 			{
 				name: "mask-border-width",
 				desc: "The mask-border-width CSS property specifies the width of an element's mask border.",
 				restriction: "none",
 				"status": "e",
-				"syntax": "[ <length-percentage> | <number> | auto ]{1,4}"
+				"syntax": "[ <length-percentage> | <number> | auto ]{1,4}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-border-width"
 			},
 			{
 				name: "mask-clip",
 				desc: "The mask-clip CSS property determines the area, which is affected by a mask. The painted content of an element must be restricted to this area.",
 				restriction: "none",
 				"syntax": "[ <geometry-box> | no-clip ]#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-clip",
 				browsers: "FF53,S,C,O"
 			},
 			{
@@ -12623,6 +12993,7 @@ export const data : any = {
 				desc: "The mask-composite CSS property represents a compositing operation used on the current mask layer with the mask layers below it.",
 				restriction: "none",
 				"syntax": "<compositing-operator>#",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/mask-composite",
 				browsers: "FF53"
 			},
 			{
@@ -12638,6 +13009,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "[ <'offset-position'>? [ <'offset-path'> [ <'offset-distance'> || <'offset-rotate'> ]? ]? ]! [ / <'offset-anchor'> ]?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/offset",
 				browsers: "C55"
 			},
 			{
@@ -12653,6 +13025,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "<length-percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/offset-distance",
 				browsers: "C55"
 			},
 			{
@@ -12661,6 +13034,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "none | ray( [ <angle> && <size>? && contain? ] ) | <path()> | <url> | [ <basic-shape> || <geometry-box> ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/offset-path",
 				browsers: "FF63,C55,O45"
 			},
 			{
@@ -12676,6 +13050,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "[ auto | reverse ] || <angle>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/offset-rotate",
 				browsers: "C56"
 			},
 			{
@@ -12697,7 +13072,8 @@ export const data : any = {
 				desc: "The overflow-clip-box CSS property specifies relative to which box the clipping happens when there is an overflow. It is short hand for the overflow-clip-box-inline and overflow-clip-box-block properties.",
 				restriction: "none",
 				"status": "n",
-				"syntax": "padding-box | content-box"
+				"syntax": "padding-box | content-box",
+				"mdn_url": "https://developer.mozilla.org/docs/Mozilla/CSS/overflow-clip-box"
 			},
 			{
 				name: "overflow-inline",
@@ -12712,6 +13088,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "[ contain | none | auto ]{1,2}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior",
 				browsers: "FF59,C63,O50"
 			},
 			{
@@ -12720,6 +13097,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "contain | none | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior-x",
 				browsers: "FF59,C63,O50"
 			},
 			{
@@ -12728,6 +13106,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "contain | none | auto",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior-y",
 				browsers: "FF59,C63,O50"
 			},
 			{
@@ -12735,20 +13114,15 @@ export const data : any = {
 				desc: "The place-content CSS shorthand property sets both the align-content and justify-content properties.",
 				restriction: "none",
 				"syntax": "<'align-content'> <'justify-content'>?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/place-content",
 				browsers: "FF60,S,C59,O"
-			},
-			{
-				name: "place-items",
-				desc: "The CSS place-items shorthand property sets both the align-items and justify-items properties. The first value is the align-items property value, the second the justify-items one. If the second value is not present, the first value is also used for it.",
-				restriction: "none",
-				"syntax": "<'align-items'> <'justify-items'>?",
-				browsers: "FF45,C59"
 			},
 			{
 				name: "rotate",
 				desc: "The rotate CSS property allows you to specify rotation transforms individually and independantly of the transform property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the transform value.",
 				restriction: "none",
 				"syntax": "none | [ x | y | z | <number>{3} ]? && <angle>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/rotate",
 				browsers: "FF60,C"
 			},
 			{
@@ -12756,6 +13130,7 @@ export const data : any = {
 				desc: "The row-gap CSS property specifies the gutter between grid rows.",
 				restriction: "none",
 				"syntax": "normal | <length-percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/row-gap",
 				browsers: "E16,FF63,S10.1,C66,O53"
 			},
 			{
@@ -12770,6 +13145,7 @@ export const data : any = {
 				desc: "The scale CSS property allows you to specify scale transforms individually and independantly of the transform property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the transform value.",
 				restriction: "none",
 				"syntax": "none | <number>{1,3}",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/scale",
 				browsers: "FF60,C"
 			},
 			{
@@ -12778,6 +13154,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "none | mandatory | proximity",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/scroll-snap-type-x",
 				browsers: "FF39,S9"
 			},
 			{
@@ -12786,6 +13163,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "n",
 				"syntax": "none | mandatory | proximity",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/scroll-snap-type-y",
 				browsers: "FF39"
 			},
 			{
@@ -12793,6 +13171,7 @@ export const data : any = {
 				desc: "The text-combine-upright CSS property specifies the combination of multiple characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.\n\nThis is used to produce an effect that is known as tate-chū-yoko (縦中横) in Japanese, or as 直書橫向 in Chinese.",
 				restriction: "none",
 				"syntax": "none | all | [ digits <integer>? ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-combine-upright",
 				browsers: "all"
 			},
 			{
@@ -12801,6 +13180,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "none | [ objects || [ spaces | [ leading-spaces || trailing-spaces ] ] || edges || box-decoration ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-decoration-skip",
 				browsers: "S8,C57,O44"
 			},
 			{
@@ -12809,6 +13189,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "auto | none",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-decoration-skip-ink",
 				browsers: "C64,O50"
 			},
 			{
@@ -12816,6 +13197,7 @@ export const data : any = {
 				desc: "The text-emphasis CSS property is a shorthand property for setting text-emphasis-style and text-emphasis-color in one declaration. This property will apply the specified emphasis mark to each character of the element's text, except separator characters, like spaces,  and control characters.",
 				restriction: "none",
 				"syntax": "<'text-emphasis-style'> || <'text-emphasis-color'>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-emphasis",
 				browsers: "FF46,S,C25,O15"
 			},
 			{
@@ -12823,6 +13205,7 @@ export const data : any = {
 				desc: "The text-emphasis-color CSS property defines the color used to draw emphasis marks on text being rendered in the HTML document. This value can also be set and reset using the text-emphasis shorthand.",
 				restriction: "none",
 				"syntax": "<color>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-emphasis-color",
 				browsers: "FF46,S,C25,O15"
 			},
 			{
@@ -12830,6 +13213,7 @@ export const data : any = {
 				desc: "The text-emphasis-position CSS property describes where emphasis marks are drawn at. The effect of emphasis marks on the line height is the same as for ruby text: if there isn't enough place, the line height is increased.",
 				restriction: "none",
 				"syntax": "[ over | under ] && [ right | left ]",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-emphasis-position",
 				browsers: "FF46,S,C,O"
 			},
 			{
@@ -12837,6 +13221,7 @@ export const data : any = {
 				desc: "The text-emphasis-style CSS property defines the type of emphasis used. It can also be set, and reset, using the text-emphasis shorthand.",
 				restriction: "none",
 				"syntax": "none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-emphasis-style",
 				browsers: "FF46,S,C25,O15"
 			},
 			{
@@ -12845,6 +13230,7 @@ export const data : any = {
 				restriction: "none",
 				"status": "e",
 				"syntax": "none | auto | <percentage>",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/text-size-adjust",
 				browsers: "E12,C54,O42"
 			},
 			{
@@ -12852,6 +13238,7 @@ export const data : any = {
 				desc: "The transform-box CSS property defines the layout box to which the transform and transform-origin properties relate.",
 				restriction: "none",
 				"syntax": "border-box | fill-box | view-box",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/transform-box",
 				browsers: "FF55,C64,O51"
 			},
 			{
@@ -12859,6 +13246,7 @@ export const data : any = {
 				desc: "The translate CSS property allows you to specify translation transforms individually and independantly of the transform property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the transform value.",
 				restriction: "none",
 				"syntax": "none | <length-percentage> [ <length-percentage> <length>? ]?",
+				"mdn_url": "https://developer.mozilla.org/docs/Web/CSS/translate",
 				browsers: "FF60,C"
 			},
 			{
